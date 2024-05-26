@@ -400,3 +400,4 @@ insert into Subscribers (SubscriberID, DiscountPercents, ExpirationDate) values 
 insert into Subscribers (SubscriberID, DiscountPercents, ExpirationDate) values (498, 10, to_date('29-08-2024', 'dd-mm-yyyy'));
 insert into Subscribers (SubscriberID, DiscountPercents, ExpirationDate) values (499, 40, to_date('21-10-2026', 'dd-mm-yyyy'));
 insert into Subscribers (SubscriberID, DiscountPercents, ExpirationDate) values (500, 10, to_date('15-03-2026', 'dd-mm-yyyy'));
+cmomit;

@@ -400,3 +400,4 @@ insert into Movies (MovieID, Title , Genre, Director, ReleaseDate, Duration, Rat
 insert into Movies (MovieID, Title , Genre, Director, ReleaseDate, Duration, Rating) values (498, 'Ant-Man', 'Documentary', 'Essie Decroix', to_date('30-07-2001', 'dd-mm-yyyy'), 118, 10);
 insert into Movies (MovieID, Title , Genre, Director, ReleaseDate, Duration, Rating) values (499, 'Holes', 'Horror', 'Ephrem Whitebread', to_date('07-10-2002', 'dd-mm-yyyy'), 87, 1);
 insert into Movies (MovieID, Title , Genre, Director, ReleaseDate, Duration, Rating) values (500, 'Spartacus', 'Animation', 'Brunhilde Gyrgorcewicx', to_date('09-05-2012', 'dd-mm-yyyy'), 166, 2);
+commit;
