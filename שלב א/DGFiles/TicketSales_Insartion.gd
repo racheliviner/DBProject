@@ -4,7 +4,7 @@ Version=1
 
 [Preferences]
 Username=
-Password=2315
+Password=2820
 Database=
 DateFormat=
 CommitCount=0
@@ -20,7 +20,7 @@ Count=400
 Name=TICKETID
 Type=NUMBER
 Size=3
-Data=Sequence(111)
+Data=Sequence(100)
 Master=
 
 [Record]

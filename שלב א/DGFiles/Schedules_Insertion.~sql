@@ -1198,11 +1198,4 @@ values (498, 0, 424, 297, 190);
 insert into RACHELI.SCHEDULES (SCHEDULEID, AVAILABLESEATS, MOVIEID, THEATERID, DATEID)
 values (499, 0, 120, 428, 228);
 
-UPDATE Schedules s
-SET s.AvailableSeats = (
-    SELECT t.Capacity
-    FROM Theaters t
-    WHERE t.TheaterID = s.TheaterID
-);
-
 commit;

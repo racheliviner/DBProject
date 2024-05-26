@@ -1,9 +1,9 @@
 ﻿-- ����� ���� ������
 CREATE TABLE Movies (
     MovieID NUMERIC(3) PRIMARY KEY,
-    Title VARCHAR2(100) NOT NULL,
-    Genre VARCHAR2(100),
-    Director VARCHAR2(100),
+    Title VARCHAR2(30) NOT NULL,
+    Genre VARCHAR2(15),
+    Director VARCHAR2(30),
     ReleaseDate DATE,
     Duration INT NOT NULL,
     Rating INT
@@ -12,15 +12,15 @@ CREATE TABLE Movies (
 -- ����� ���� ��������
 CREATE TABLE Dates (
     DateID NUMERIC(3) PRIMARY KEY,
-    HourH VARCHAR2(100) NOT NULL,
-    DayD VARCHAR2(100) NOT NULL,
+    HourH VARCHAR2(15) NOT NULL,
+    DayD VARCHAR2(15) NOT NULL,
     DateD DATE NOT NULL
 );
 
 -- ����� ���� �������
 CREATE TABLE Theaters (
     TheaterID NUMERIC(3) PRIMARY KEY,
-    TheaterName VARCHAR2(100) NOT NULL,
+    TheaterName VARCHAR2(30) NOT NULL,
     Capacity INT NOT NULL
 );
 
