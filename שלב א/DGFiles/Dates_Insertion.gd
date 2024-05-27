@@ -4,7 +4,7 @@ Version=1
 
 [Preferences]
 Username=
-Password=2713
+Password=2495
 Database=
 DateFormat=dd/mm/yyyy
 CommitCount=0
@@ -41,6 +41,6 @@ Master=
 Name=DATED
 Type=DATE
 Size=
-Data=Random(1/1/2024, 30/12/2024)
+Data=Random(1/6/2024, 30/6/2024)
 Master=
 
