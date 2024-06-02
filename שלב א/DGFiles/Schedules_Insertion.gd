@@ -4,7 +4,7 @@ Version=1
 
 [Preferences]
 Username=
-Password=2073
+Password=2559
 Database=
 DateFormat=
 CommitCount=0
@@ -12,7 +12,7 @@ CommitDelay=0
 InitScript=
 
 [Table]
-Owner=RACHELI
+Owner=
 Name=SCHEDULES
 Count=400
 

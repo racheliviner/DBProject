@@ -11,16 +11,16 @@ insert into Movies (MovieID, Title , Genre, Director, ReleaseDate, Duration, Rat
 insert into Movies (MovieID, Title , Genre, Director, ReleaseDate, Duration, Rating) values (109, 'Iron Man', 'Comedy', 'Nefen Bruyett', to_date('06-03-2017', 'dd-mm-yyyy'), 169, 3);
 
 -- insert Date table
- insert into RACHELI.DATES (DATEID, HOURH, DAYD, DATED) values (111, '22 : 11', 'fri', to_date('10-03-2024', 'dd-mm-yyyy'));
-insert into RACHELI.DATES (DATEID, HOURH, DAYD, DATED) values (112, '21 : 8', 'tue', to_date('09-12-2024', 'dd-mm-yyyy'));
-insert into RACHELI.DATES (DATEID, HOURH, DAYD, DATED) values (511, '22 : 43', 'wed', to_date('27-10-2024', 'dd-mm-yyyy'));
-insert into RACHELI.DATES (DATEID, HOURH, DAYD, DATED) values (114, '19 : 29', 'thu', to_date('09-10-2024', 'dd-mm-yyyy'));
-insert into RACHELI.DATES (DATEID, HOURH, DAYD, DATED) values (115, '20 : 33', 'sun', to_date('15-02-2024', 'dd-mm-yyyy'));
-insert into RACHELI.DATES (DATEID, HOURH, DAYD, DATED) values (116, '20 : 20', 'tue', to_date('26-01-2024', 'dd-mm-yyyy'));
-insert into RACHELI.DATES (DATEID, HOURH, DAYD, DATED) values (117, '23 : 37', 'thu', to_date('08-03-2024', 'dd-mm-yyyy'));
-insert into RACHELI.DATES (DATEID, HOURH, DAYD, DATED) values (118, '19 : 7', 'sun', to_date('03-11-2024', 'dd-mm-yyyy'));
-insert into RACHELI.DATES (DATEID, HOURH, DAYD, DATED) values (119, '18 : 54', 'sat', to_date('19-11-2024', 'dd-mm-yyyy'));
-insert into RACHELI.DATES (DATEID, HOURH, DAYD, DATED) values (120, '22 : 51', 'wed', to_date('04-12-2024', 'dd-mm-yyyy'));
+ insert into DATES (DATEID, HOURH, DAYD, DATED) values (111, '22 : 11', 'fri', to_date('10-03-2024', 'dd-mm-yyyy'));
+insert into DATES (DATEID, HOURH, DAYD, DATED) values (112, '21 : 8', 'tue', to_date('09-12-2024', 'dd-mm-yyyy'));
+insert into DATES (DATEID, HOURH, DAYD, DATED) values (511, '22 : 43', 'wed', to_date('27-10-2024', 'dd-mm-yyyy'));
+insert into DATES (DATEID, HOURH, DAYD, DATED) values (114, '19 : 29', 'thu', to_date('09-10-2024', 'dd-mm-yyyy'));
+insert into DATES (DATEID, HOURH, DAYD, DATED) values (115, '20 : 33', 'sun', to_date('15-02-2024', 'dd-mm-yyyy'));
+insert into DATES (DATEID, HOURH, DAYD, DATED) values (116, '20 : 20', 'tue', to_date('26-01-2024', 'dd-mm-yyyy'));
+insert into DATES (DATEID, HOURH, DAYD, DATED) values (117, '23 : 37', 'thu', to_date('08-03-2024', 'dd-mm-yyyy'));
+insert into DATES (DATEID, HOURH, DAYD, DATED) values (118, '19 : 7', 'sun', to_date('03-11-2024', 'dd-mm-yyyy'));
+insert into DATES (DATEID, HOURH, DAYD, DATED) values (119, '18 : 54', 'sat', to_date('19-11-2024', 'dd-mm-yyyy'));
+insert into DATES (DATEID, HOURH, DAYD, DATED) values (120, '22 : 51', 'wed', to_date('04-12-2024', 'dd-mm-yyyy'));
 
 -- insert Theaters table
 INSERT INTO THEATERS (THEATERID, THEATERNAME, CAPACITY) VALUES (111, 'Rose', 193);
@@ -35,16 +35,16 @@ INSERT INTO THEATERS (THEATERID, THEATERNAME, CAPACITY) VALUES (119, 'Poppy', 21
 INSERT INTO THEATERS (THEATERID, THEATERNAME, CAPACITY) VALUES (120, 'Peony', 148);
 
 -- insert Schedules table
-insert into SCHEDULES (SCHEDULEID, AVAILABLESEATS, MOVIEID, THEATERID, DATEID) values (111, 0, 919, 113, 268);
-insert into SCHEDULES (SCHEDULEID, AVAILABLESEATS, MOVIEID, THEATERID, DATEID) values (112, 0, 119, 417, 145);
-insert into SCHEDULES (SCHEDULEID, AVAILABLESEATS, MOVIEID, THEATERID, DATEID) values (113, 0, 312, 368, 363);
-insert into SCHEDULES (SCHEDULEID, AVAILABLESEATS, MOVIEID, THEATERID, DATEID) values (114, 0, 557, 470, 428);
-insert into SCHEDULES (SCHEDULEID, AVAILABLESEATS, MOVIEID, THEATERID, DATEID) values (115, 0, 35, 132, 374);
-insert into SCHEDULES (SCHEDULEID, AVAILABLESEATS, MOVIEID, THEATERID, DATEID) values (116, 0, 211, 239, 436);
-insert into SCHEDULES (SCHEDULEID, AVAILABLESEATS, MOVIEID, THEATERID, DATEID) values (117, 0, 843, 220, 445);
-insert into SCHEDULES (SCHEDULEID, AVAILABLESEATS, MOVIEID, THEATERID, DATEID) values (118, 0, 749, 317, 466);
-insert into SCHEDULES (SCHEDULEID, AVAILABLESEATS, MOVIEID, THEATERID, DATEID) values (119, 0, 191, 191, 279);
-insert into SCHEDULES (SCHEDULEID, AVAILABLESEATS, MOVIEID, THEATERID, DATEID) values (120, 0, 365, 262, 167);
+INSERT INTO Schedules (ScheduleID, TheaterID, AvailableSeats, MovieID, DateID) VALUES (111, 111, 0, 100, 111);
+insert into SCHEDULES (SCHEDULEID, THEATERID, AVAILABLESEATS, MOVIEID, DATEID) values (112, 112, 0, 102, 511);
+insert into SCHEDULES (SCHEDULEID, THEATERID, AVAILABLESEATS, MOVIEID, DATEID) values (113, 113, 0, 103, 112);
+insert into SCHEDULES (SCHEDULEID, THEATERID, AVAILABLESEATS, MOVIEID, DATEID) values (114, 114, 0, 104, 120);
+insert into SCHEDULES (SCHEDULEID, THEATERID, AVAILABLESEATS, MOVIEID, DATEID) values (115, 115, 0, 105, 114);
+insert into SCHEDULES (SCHEDULEID, THEATERID, AVAILABLESEATS, MOVIEID, DATEID) values (116, 116, 0, 106, 115);
+insert into SCHEDULES (SCHEDULEID, THEATERID, AVAILABLESEATS, MOVIEID, DATEID) values (117, 117, 0, 107, 116);
+insert into SCHEDULES (SCHEDULEID, THEATERID, AVAILABLESEATS, MOVIEID, DATEID) values (118, 118, 0, 108, 117);
+insert into SCHEDULES (SCHEDULEID, THEATERID, AVAILABLESEATS, MOVIEID, DATEID) values (119, 119, 0, 109, 118);
+insert into SCHEDULES (SCHEDULEID, THEATERID, AVAILABLESEATS, MOVIEID, DATEID) values (120, 120, 0, 101, 119);
 
 -- insert Subscribers table
 insert into Subscribers (SubscriberID, DiscountPercents, ExpirationDate) values (100, 50, to_date('24-01-2029', 'dd-mm-yyyy'));
@@ -70,6 +70,7 @@ insert into TICKETSALES (TICKETID, PRICE, ISSOLD, SCHEDULEID, SUBSCRIBERID) valu
 insert into TICKETSALES (TICKETID, PRICE, ISSOLD, SCHEDULEID, SUBSCRIBERID) values (119, 65.89, 'N', 234, 172);
 insert into TICKETSALES (TICKETID, PRICE, ISSOLD, SCHEDULEID, SUBSCRIBERID) values (120, 132.75, 'N', 505, 188);
 
+commit;
 
 
 

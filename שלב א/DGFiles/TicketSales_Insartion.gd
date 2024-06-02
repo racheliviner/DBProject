@@ -4,7 +4,7 @@ Version=1
 
 [Preferences]
 Username=
-Password=2462
+Password=2343
 Database=
 DateFormat=
 CommitCount=0
@@ -12,7 +12,7 @@ CommitDelay=0
 InitScript=
 
 [Table]
-Owner=RACHELI
+Owner=
 Name=TICKETSALES
 Count=400
 
@@ -27,7 +27,7 @@ Master=
 Name=PRICE
 Type=NUMBER
 Size=5,2
-Data=Random(20, 150)
+Data=List(30, 30, 30, 30, 50, 90)
 Master=
 
 [Record]

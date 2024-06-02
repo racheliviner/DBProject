@@ -1,5 +1,5 @@
 ﻿prompt PL/SQL Developer import file
-prompt Created on יום שני 27 מאי 2024 by vider
+prompt Created on יום ראשון 02 יוני 2024 by vider
 set feedback off
 set define off
 prompt Creating DATES...
@@ -107,12 +107,12 @@ alter table SUBSCRIBERS disable all triggers;
 prompt Disabling triggers for TICKETSALES...
 alter table TICKETSALES disable all triggers;
 prompt Disabling foreign key constraints for SCHEDULES...
-alter table SCHEDULES disable constraint SYS_C007318;
-alter table SCHEDULES disable constraint SYS_C007319;
-alter table SCHEDULES disable constraint SYS_C007320;
+alter table SCHEDULES disable constraint SYS_C007920;
+alter table SCHEDULES disable constraint SYS_C007921;
+alter table SCHEDULES disable constraint SYS_C007922;
 prompt Disabling foreign key constraints for TICKETSALES...
-alter table TICKETSALES disable constraint SYS_C007326;
-alter table TICKETSALES disable constraint SYS_C007327;
+alter table TICKETSALES disable constraint SYS_C007930;
+alter table TICKETSALES disable constraint SYS_C007931;
 prompt Deleting TICKETSALES...
 delete from TICKETSALES;
 commit;
@@ -133,813 +133,975 @@ delete from DATES;
 commit;
 prompt Loading DATES...
 insert into DATES (dateid, hourh, dayd, dated)
-values (100, '23 : 59', 'mon', to_date('26-06-2024', 'dd-mm-yyyy'));
+values (100, '14:00', 'SAT', to_date('01-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (101, '18 : 57', 'sun', to_date('10-06-2024', 'dd-mm-yyyy'));
+values (101, '17:00', 'SAT', to_date('01-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (102, '20 : 38', 'wed', to_date('26-06-2024', 'dd-mm-yyyy'));
+values (102, '20:00', 'SAT', to_date('01-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (103, '18 : 34', 'mon', to_date('24-06-2024', 'dd-mm-yyyy'));
+values (103, '23:00', 'SAT', to_date('01-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (104, '21 : 5', 'fri', to_date('29-06-2024', 'dd-mm-yyyy'));
+values (104, '14:00', 'SUN', to_date('02-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (105, '22 : 27', 'wed', to_date('17-06-2024', 'dd-mm-yyyy'));
+values (105, '17:00', 'SUN', to_date('02-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (106, '20 : 53', 'mon', to_date('09-06-2024', 'dd-mm-yyyy'));
+values (106, '20:00', 'SUN', to_date('02-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (107, '22 : 25', 'thu', to_date('18-06-2024', 'dd-mm-yyyy'));
+values (107, '23:00', 'SUN', to_date('02-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (108, '20 : 12', 'tue', to_date('21-06-2024', 'dd-mm-yyyy'));
+values (108, '14:00', 'MON', to_date('03-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (109, '18 : 8', 'thu', to_date('07-06-2024', 'dd-mm-yyyy'));
+values (109, '17:00', 'MON', to_date('03-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (110, '23 : 8', 'sun', to_date('03-06-2024', 'dd-mm-yyyy'));
+values (110, '20:00', 'MON', to_date('03-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (111, '21 : 15', 'sun', to_date('25-06-2024', 'dd-mm-yyyy'));
+values (111, '23:00', 'MON', to_date('03-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (112, '22 : 29', 'sun', to_date('29-06-2024', 'dd-mm-yyyy'));
+values (112, '14:00', 'TUE', to_date('04-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (113, '22 : 13', 'thu', to_date('25-06-2024', 'dd-mm-yyyy'));
+values (113, '17:00', 'TUE', to_date('04-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (114, '21 : 15', 'thu', to_date('10-06-2024', 'dd-mm-yyyy'));
+values (114, '20:00', 'TUE', to_date('04-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (115, '19 : 4', 'tue', to_date('01-06-2024', 'dd-mm-yyyy'));
+values (115, '23:00', 'TUE', to_date('04-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (116, '23 : 57', 'sat', to_date('04-06-2024', 'dd-mm-yyyy'));
+values (116, '14:00', 'WED', to_date('05-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (117, '22 : 49', 'wed', to_date('04-06-2024', 'dd-mm-yyyy'));
+values (117, '17:00', 'WED', to_date('05-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (118, '21 : 53', 'sun', to_date('10-06-2024', 'dd-mm-yyyy'));
+values (118, '20:00', 'WED', to_date('05-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (119, '18 : 52', 'wed', to_date('29-06-2024', 'dd-mm-yyyy'));
+values (119, '23:00', 'WED', to_date('05-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (120, '18 : 0', 'sat', to_date('16-06-2024', 'dd-mm-yyyy'));
+values (120, '14:00', 'THU', to_date('06-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (121, '20 : 6', 'tue', to_date('18-06-2024', 'dd-mm-yyyy'));
+values (121, '17:00', 'THU', to_date('06-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (122, '18 : 44', 'sun', to_date('09-06-2024', 'dd-mm-yyyy'));
+values (122, '20:00', 'THU', to_date('06-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (123, '23 : 50', 'sat', to_date('26-06-2024', 'dd-mm-yyyy'));
+values (123, '23:00', 'THU', to_date('06-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (124, '18 : 37', 'sun', to_date('13-06-2024', 'dd-mm-yyyy'));
+values (124, '14:00', 'FRI', to_date('07-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (125, '21 : 32', 'fri', to_date('14-06-2024', 'dd-mm-yyyy'));
+values (125, '17:00', 'FRI', to_date('07-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (126, '19 : 38', 'fri', to_date('02-06-2024', 'dd-mm-yyyy'));
+values (126, '20:00', 'FRI', to_date('07-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (127, '20 : 28', 'sun', to_date('25-06-2024', 'dd-mm-yyyy'));
+values (127, '23:00', 'FRI', to_date('07-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (128, '19 : 33', 'mon', to_date('14-06-2024', 'dd-mm-yyyy'));
+values (128, '14:00', 'SAT', to_date('08-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (129, '18 : 1', 'thu', to_date('02-06-2024', 'dd-mm-yyyy'));
+values (129, '17:00', 'SAT', to_date('08-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (130, '21 : 50', 'wed', to_date('22-06-2024', 'dd-mm-yyyy'));
+values (130, '20:00', 'SAT', to_date('08-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (131, '23 : 52', 'mon', to_date('14-06-2024', 'dd-mm-yyyy'));
+values (131, '23:00', 'SAT', to_date('08-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (132, '21 : 33', 'sun', to_date('12-06-2024', 'dd-mm-yyyy'));
+values (132, '14:00', 'SUN', to_date('09-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (133, '21 : 4', 'fri', to_date('23-06-2024', 'dd-mm-yyyy'));
+values (133, '17:00', 'SUN', to_date('09-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (134, '19 : 5', 'sat', to_date('15-06-2024', 'dd-mm-yyyy'));
+values (134, '20:00', 'SUN', to_date('09-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (135, '22 : 48', 'sun', to_date('21-06-2024', 'dd-mm-yyyy'));
+values (135, '23:00', 'SUN', to_date('09-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (136, '23 : 31', 'mon', to_date('26-06-2024', 'dd-mm-yyyy'));
+values (136, '14:00', 'MON', to_date('10-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (137, '22 : 3', 'mon', to_date('18-06-2024', 'dd-mm-yyyy'));
+values (137, '17:00', 'MON', to_date('10-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (138, '20 : 57', 'mon', to_date('03-06-2024', 'dd-mm-yyyy'));
+values (138, '20:00', 'MON', to_date('10-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (139, '22 : 0', 'sun', to_date('16-06-2024', 'dd-mm-yyyy'));
+values (139, '23:00', 'MON', to_date('10-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (140, '22 : 39', 'thu', to_date('02-06-2024', 'dd-mm-yyyy'));
+values (140, '14:00', 'TUE', to_date('11-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (141, '19 : 20', 'tue', to_date('23-06-2024', 'dd-mm-yyyy'));
+values (141, '17:00', 'TUE', to_date('11-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (142, '23 : 53', 'mon', to_date('21-06-2024', 'dd-mm-yyyy'));
+values (142, '20:00', 'TUE', to_date('11-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (143, '19 : 17', 'sat', to_date('14-06-2024', 'dd-mm-yyyy'));
+values (143, '23:00', 'TUE', to_date('11-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (144, '22 : 43', 'tue', to_date('08-06-2024', 'dd-mm-yyyy'));
+values (144, '14:00', 'WED', to_date('12-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (145, '19 : 31', 'mon', to_date('18-06-2024', 'dd-mm-yyyy'));
+values (145, '17:00', 'WED', to_date('12-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (146, '22 : 29', 'wed', to_date('16-06-2024', 'dd-mm-yyyy'));
+values (146, '20:00', 'WED', to_date('12-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (147, '23 : 47', 'tue', to_date('14-06-2024', 'dd-mm-yyyy'));
+values (147, '23:00', 'WED', to_date('12-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (148, '22 : 11', 'thu', to_date('23-06-2024', 'dd-mm-yyyy'));
+values (148, '14:00', 'THU', to_date('13-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (149, '23 : 32', 'sat', to_date('03-06-2024', 'dd-mm-yyyy'));
+values (149, '17:00', 'THU', to_date('13-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (150, '19 : 38', 'mon', to_date('17-06-2024', 'dd-mm-yyyy'));
+values (150, '20:00', 'THU', to_date('13-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (151, '20 : 6', 'fri', to_date('14-06-2024', 'dd-mm-yyyy'));
+values (151, '23:00', 'THU', to_date('13-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (152, '19 : 26', 'wed', to_date('12-06-2024', 'dd-mm-yyyy'));
+values (152, '14:00', 'FRI', to_date('14-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (153, '22 : 55', 'wed', to_date('18-06-2024', 'dd-mm-yyyy'));
+values (153, '17:00', 'FRI', to_date('14-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (154, '21 : 45', 'thu', to_date('06-06-2024', 'dd-mm-yyyy'));
+values (154, '20:00', 'FRI', to_date('14-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (155, '19 : 28', 'thu', to_date('07-06-2024', 'dd-mm-yyyy'));
+values (155, '23:00', 'FRI', to_date('14-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (156, '22 : 56', 'mon', to_date('09-06-2024', 'dd-mm-yyyy'));
+values (156, '14:00', 'SAT', to_date('15-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (157, '20 : 59', 'thu', to_date('17-06-2024', 'dd-mm-yyyy'));
+values (157, '17:00', 'SAT', to_date('15-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (158, '21 : 55', 'fri', to_date('25-06-2024', 'dd-mm-yyyy'));
+values (158, '20:00', 'SAT', to_date('15-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (159, '21 : 3', 'tue', to_date('23-06-2024', 'dd-mm-yyyy'));
+values (159, '23:00', 'SAT', to_date('15-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (160, '22 : 25', 'thu', to_date('13-06-2024', 'dd-mm-yyyy'));
+values (160, '14:00', 'SUN', to_date('16-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (161, '19 : 59', 'sat', to_date('06-06-2024', 'dd-mm-yyyy'));
+values (161, '17:00', 'SUN', to_date('16-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (162, '20 : 3', 'sun', to_date('26-06-2024', 'dd-mm-yyyy'));
+values (162, '20:00', 'SUN', to_date('16-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (163, '20 : 0', 'tue', to_date('10-06-2024', 'dd-mm-yyyy'));
+values (163, '23:00', 'SUN', to_date('16-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (164, '18 : 6', 'fri', to_date('18-06-2024', 'dd-mm-yyyy'));
+values (164, '14:00', 'MON', to_date('17-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (165, '19 : 17', 'thu', to_date('02-06-2024', 'dd-mm-yyyy'));
+values (165, '17:00', 'MON', to_date('17-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (166, '21 : 12', 'sun', to_date('02-06-2024', 'dd-mm-yyyy'));
+values (166, '20:00', 'MON', to_date('17-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (167, '20 : 44', 'thu', to_date('27-06-2024', 'dd-mm-yyyy'));
+values (167, '23:00', 'MON', to_date('17-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (168, '21 : 51', 'sun', to_date('23-06-2024', 'dd-mm-yyyy'));
+values (168, '14:00', 'TUE', to_date('18-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (169, '21 : 37', 'wed', to_date('29-06-2024', 'dd-mm-yyyy'));
+values (169, '17:00', 'TUE', to_date('18-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (170, '21 : 37', 'thu', to_date('11-06-2024', 'dd-mm-yyyy'));
+values (170, '20:00', 'TUE', to_date('18-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (171, '19 : 3', 'sat', to_date('28-06-2024', 'dd-mm-yyyy'));
+values (171, '23:00', 'TUE', to_date('18-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (172, '21 : 21', 'sun', to_date('02-06-2024', 'dd-mm-yyyy'));
+values (172, '14:00', 'WED', to_date('19-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (173, '22 : 12', 'sun', to_date('16-06-2024', 'dd-mm-yyyy'));
+values (173, '17:00', 'WED', to_date('19-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (174, '21 : 59', 'thu', to_date('18-06-2024', 'dd-mm-yyyy'));
+values (174, '20:00', 'WED', to_date('19-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (175, '21 : 23', 'mon', to_date('03-06-2024', 'dd-mm-yyyy'));
+values (175, '23:00', 'WED', to_date('19-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (176, '23 : 21', 'wed', to_date('07-06-2024', 'dd-mm-yyyy'));
+values (176, '14:00', 'THU', to_date('20-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (177, '22 : 57', 'tue', to_date('22-06-2024', 'dd-mm-yyyy'));
+values (177, '17:00', 'THU', to_date('20-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (178, '20 : 38', 'wed', to_date('05-06-2024', 'dd-mm-yyyy'));
+values (178, '20:00', 'THU', to_date('20-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (179, '18 : 57', 'wed', to_date('22-06-2024', 'dd-mm-yyyy'));
+values (179, '23:00', 'THU', to_date('20-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (180, '23 : 48', 'sun', to_date('12-06-2024', 'dd-mm-yyyy'));
+values (180, '14:00', 'FRI', to_date('21-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (181, '21 : 41', 'tue', to_date('29-06-2024', 'dd-mm-yyyy'));
+values (181, '17:00', 'FRI', to_date('21-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (182, '23 : 41', 'mon', to_date('20-06-2024', 'dd-mm-yyyy'));
+values (182, '20:00', 'FRI', to_date('21-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (183, '20 : 57', 'wed', to_date('29-06-2024', 'dd-mm-yyyy'));
+values (183, '23:00', 'FRI', to_date('21-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (184, '21 : 2', 'thu', to_date('25-06-2024', 'dd-mm-yyyy'));
+values (184, '14:00', 'SAT', to_date('22-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (185, '22 : 17', 'sun', to_date('10-06-2024', 'dd-mm-yyyy'));
+values (185, '17:00', 'SAT', to_date('22-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (186, '19 : 16', 'sat', to_date('20-06-2024', 'dd-mm-yyyy'));
+values (186, '20:00', 'SAT', to_date('22-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (187, '18 : 46', 'sat', to_date('01-06-2024', 'dd-mm-yyyy'));
+values (187, '23:00', 'SAT', to_date('22-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (188, '18 : 1', 'sun', to_date('18-06-2024', 'dd-mm-yyyy'));
+values (188, '14:00', 'SUN', to_date('23-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (189, '20 : 55', 'thu', to_date('15-06-2024', 'dd-mm-yyyy'));
+values (189, '17:00', 'SUN', to_date('23-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (190, '21 : 40', 'thu', to_date('10-06-2024', 'dd-mm-yyyy'));
+values (190, '20:00', 'SUN', to_date('23-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (191, '20 : 7', 'mon', to_date('28-06-2024', 'dd-mm-yyyy'));
+values (191, '23:00', 'SUN', to_date('23-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (192, '22 : 27', 'fri', to_date('04-06-2024', 'dd-mm-yyyy'));
+values (192, '14:00', 'MON', to_date('24-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (193, '18 : 10', 'sun', to_date('17-06-2024', 'dd-mm-yyyy'));
+values (193, '17:00', 'MON', to_date('24-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (194, '23 : 35', 'thu', to_date('03-06-2024', 'dd-mm-yyyy'));
+values (194, '20:00', 'MON', to_date('24-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (195, '21 : 17', 'tue', to_date('17-06-2024', 'dd-mm-yyyy'));
+values (195, '23:00', 'MON', to_date('24-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (196, '20 : 2', 'tue', to_date('02-06-2024', 'dd-mm-yyyy'));
+values (196, '14:00', 'TUE', to_date('25-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (197, '18 : 16', 'sun', to_date('10-06-2024', 'dd-mm-yyyy'));
+values (197, '17:00', 'TUE', to_date('25-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (198, '22 : 15', 'tue', to_date('12-06-2024', 'dd-mm-yyyy'));
+values (198, '20:00', 'TUE', to_date('25-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (199, '19 : 15', 'mon', to_date('25-06-2024', 'dd-mm-yyyy'));
+values (199, '23:00', 'TUE', to_date('25-06-2024', 'dd-mm-yyyy'));
 commit;
 prompt 100 records committed...
 insert into DATES (dateid, hourh, dayd, dated)
-values (200, '19 : 36', 'sun', to_date('24-06-2024', 'dd-mm-yyyy'));
+values (200, '14:00', 'WED', to_date('26-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (201, '23 : 19', 'mon', to_date('13-06-2024', 'dd-mm-yyyy'));
+values (201, '17:00', 'WED', to_date('26-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (202, '22 : 39', 'mon', to_date('12-06-2024', 'dd-mm-yyyy'));
+values (202, '20:00', 'WED', to_date('26-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (203, '18 : 57', 'tue', to_date('25-06-2024', 'dd-mm-yyyy'));
+values (203, '23:00', 'WED', to_date('26-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (204, '22 : 19', 'fri', to_date('11-06-2024', 'dd-mm-yyyy'));
+values (204, '14:00', 'THU', to_date('27-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (205, '20 : 21', 'sun', to_date('21-06-2024', 'dd-mm-yyyy'));
+values (205, '17:00', 'THU', to_date('27-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (206, '18 : 43', 'thu', to_date('18-06-2024', 'dd-mm-yyyy'));
+values (206, '20:00', 'THU', to_date('27-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (207, '23 : 24', 'wed', to_date('06-06-2024', 'dd-mm-yyyy'));
+values (207, '23:00', 'THU', to_date('27-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (208, '21 : 55', 'tue', to_date('28-06-2024', 'dd-mm-yyyy'));
+values (208, '14:00', 'FRI', to_date('28-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (209, '18 : 39', 'wed', to_date('01-06-2024', 'dd-mm-yyyy'));
+values (209, '17:00', 'FRI', to_date('28-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (210, '19 : 29', 'tue', to_date('16-06-2024', 'dd-mm-yyyy'));
+values (210, '20:00', 'FRI', to_date('28-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (211, '19 : 56', 'mon', to_date('26-06-2024', 'dd-mm-yyyy'));
+values (211, '23:00', 'FRI', to_date('28-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (212, '20 : 49', 'wed', to_date('17-06-2024', 'dd-mm-yyyy'));
+values (212, '14:00', 'SAT', to_date('29-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (213, '23 : 55', 'sat', to_date('28-06-2024', 'dd-mm-yyyy'));
+values (213, '17:00', 'SAT', to_date('29-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (214, '22 : 18', 'wed', to_date('14-06-2024', 'dd-mm-yyyy'));
+values (214, '20:00', 'SAT', to_date('29-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (215, '19 : 21', 'mon', to_date('29-06-2024', 'dd-mm-yyyy'));
+values (215, '23:00', 'SAT', to_date('29-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (216, '20 : 20', 'tue', to_date('29-06-2024', 'dd-mm-yyyy'));
+values (216, '14:00', 'SUN', to_date('30-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (217, '23 : 20', 'sat', to_date('13-06-2024', 'dd-mm-yyyy'));
+values (217, '17:00', 'SUN', to_date('30-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (218, '21 : 1', 'sat', to_date('04-06-2024', 'dd-mm-yyyy'));
+values (218, '20:00', 'SUN', to_date('30-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (219, '23 : 8', 'thu', to_date('07-06-2024', 'dd-mm-yyyy'));
+values (219, '23:00', 'SUN', to_date('30-06-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (220, '21 : 53', 'fri', to_date('01-06-2024', 'dd-mm-yyyy'));
+values (220, '14:00', 'MON', to_date('01-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (221, '21 : 57', 'fri', to_date('15-06-2024', 'dd-mm-yyyy'));
+values (221, '17:00', 'MON', to_date('01-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (222, '19 : 11', 'sat', to_date('09-06-2024', 'dd-mm-yyyy'));
+values (222, '20:00', 'MON', to_date('01-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (223, '20 : 35', 'sun', to_date('25-06-2024', 'dd-mm-yyyy'));
+values (223, '23:00', 'MON', to_date('01-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (224, '20 : 11', 'tue', to_date('19-06-2024', 'dd-mm-yyyy'));
+values (224, '14:00', 'TUE', to_date('02-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (225, '21 : 42', 'thu', to_date('26-06-2024', 'dd-mm-yyyy'));
+values (225, '17:00', 'TUE', to_date('02-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (226, '18 : 11', 'sat', to_date('20-06-2024', 'dd-mm-yyyy'));
+values (226, '20:00', 'TUE', to_date('02-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (227, '18 : 5', 'sun', to_date('03-06-2024', 'dd-mm-yyyy'));
+values (227, '23:00', 'TUE', to_date('02-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (228, '20 : 23', 'sat', to_date('11-06-2024', 'dd-mm-yyyy'));
+values (228, '14:00', 'WED', to_date('03-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (229, '23 : 40', 'mon', to_date('25-06-2024', 'dd-mm-yyyy'));
+values (229, '17:00', 'WED', to_date('03-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (230, '20 : 30', 'sat', to_date('10-06-2024', 'dd-mm-yyyy'));
+values (230, '20:00', 'WED', to_date('03-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (231, '21 : 15', 'wed', to_date('01-06-2024', 'dd-mm-yyyy'));
+values (231, '23:00', 'WED', to_date('03-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (232, '23 : 18', 'fri', to_date('01-06-2024', 'dd-mm-yyyy'));
+values (232, '14:00', 'THU', to_date('04-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (233, '23 : 16', 'fri', to_date('20-06-2024', 'dd-mm-yyyy'));
+values (233, '17:00', 'THU', to_date('04-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (234, '20 : 50', 'sun', to_date('17-06-2024', 'dd-mm-yyyy'));
+values (234, '20:00', 'THU', to_date('04-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (235, '22 : 6', 'mon', to_date('05-06-2024', 'dd-mm-yyyy'));
+values (235, '23:00', 'THU', to_date('04-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (236, '19 : 35', 'sun', to_date('16-06-2024', 'dd-mm-yyyy'));
+values (236, '14:00', 'FRI', to_date('05-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (237, '20 : 26', 'wed', to_date('16-06-2024', 'dd-mm-yyyy'));
+values (237, '17:00', 'FRI', to_date('05-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (238, '19 : 20', 'thu', to_date('16-06-2024', 'dd-mm-yyyy'));
+values (238, '20:00', 'FRI', to_date('05-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (239, '19 : 16', 'sun', to_date('08-06-2024', 'dd-mm-yyyy'));
+values (239, '23:00', 'FRI', to_date('05-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (240, '23 : 56', 'mon', to_date('15-06-2024', 'dd-mm-yyyy'));
+values (240, '14:00', 'SAT', to_date('06-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (241, '19 : 48', 'wed', to_date('04-06-2024', 'dd-mm-yyyy'));
+values (241, '17:00', 'SAT', to_date('06-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (242, '23 : 47', 'sat', to_date('28-06-2024', 'dd-mm-yyyy'));
+values (242, '20:00', 'SAT', to_date('06-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (243, '18 : 10', 'mon', to_date('24-06-2024', 'dd-mm-yyyy'));
+values (243, '23:00', 'SAT', to_date('06-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (244, '22 : 15', 'sun', to_date('27-06-2024', 'dd-mm-yyyy'));
+values (244, '14:00', 'SUN', to_date('07-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (245, '23 : 52', 'fri', to_date('08-06-2024', 'dd-mm-yyyy'));
+values (245, '17:00', 'SUN', to_date('07-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (246, '22 : 45', 'tue', to_date('23-06-2024', 'dd-mm-yyyy'));
+values (246, '20:00', 'SUN', to_date('07-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (247, '23 : 12', 'mon', to_date('27-06-2024', 'dd-mm-yyyy'));
+values (247, '23:00', 'SUN', to_date('07-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (248, '18 : 49', 'sat', to_date('24-06-2024', 'dd-mm-yyyy'));
+values (248, '14:00', 'MON', to_date('08-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (249, '21 : 14', 'thu', to_date('21-06-2024', 'dd-mm-yyyy'));
+values (249, '17:00', 'MON', to_date('08-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (250, '18 : 49', 'wed', to_date('25-06-2024', 'dd-mm-yyyy'));
+values (250, '20:00', 'MON', to_date('08-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (251, '21 : 56', 'sat', to_date('26-06-2024', 'dd-mm-yyyy'));
+values (251, '23:00', 'MON', to_date('08-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (252, '18 : 33', 'tue', to_date('03-06-2024', 'dd-mm-yyyy'));
+values (252, '14:00', 'TUE', to_date('09-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (253, '23 : 46', 'thu', to_date('22-06-2024', 'dd-mm-yyyy'));
+values (253, '17:00', 'TUE', to_date('09-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (254, '22 : 44', 'thu', to_date('20-06-2024', 'dd-mm-yyyy'));
+values (254, '20:00', 'TUE', to_date('09-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (255, '20 : 19', 'fri', to_date('27-06-2024', 'dd-mm-yyyy'));
+values (255, '23:00', 'TUE', to_date('09-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (256, '18 : 7', 'sat', to_date('01-06-2024', 'dd-mm-yyyy'));
+values (256, '14:00', 'WED', to_date('10-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (257, '20 : 44', 'wed', to_date('27-06-2024', 'dd-mm-yyyy'));
+values (257, '17:00', 'WED', to_date('10-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (258, '18 : 38', 'sun', to_date('01-06-2024', 'dd-mm-yyyy'));
+values (258, '20:00', 'WED', to_date('10-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (259, '22 : 50', 'fri', to_date('26-06-2024', 'dd-mm-yyyy'));
+values (259, '23:00', 'WED', to_date('10-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (260, '22 : 10', 'thu', to_date('03-06-2024', 'dd-mm-yyyy'));
+values (260, '14:00', 'THU', to_date('11-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (261, '22 : 7', 'tue', to_date('23-06-2024', 'dd-mm-yyyy'));
+values (261, '17:00', 'THU', to_date('11-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (262, '22 : 13', 'wed', to_date('21-06-2024', 'dd-mm-yyyy'));
+values (262, '20:00', 'THU', to_date('11-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (263, '19 : 39', 'sat', to_date('25-06-2024', 'dd-mm-yyyy'));
+values (263, '23:00', 'THU', to_date('11-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (264, '23 : 28', 'thu', to_date('16-06-2024', 'dd-mm-yyyy'));
+values (264, '14:00', 'FRI', to_date('12-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (265, '20 : 39', 'tue', to_date('12-06-2024', 'dd-mm-yyyy'));
+values (265, '17:00', 'FRI', to_date('12-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (266, '23 : 56', 'sun', to_date('06-06-2024', 'dd-mm-yyyy'));
+values (266, '20:00', 'FRI', to_date('12-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (267, '18 : 55', 'wed', to_date('25-06-2024', 'dd-mm-yyyy'));
+values (267, '23:00', 'FRI', to_date('12-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (268, '21 : 10', 'fri', to_date('05-06-2024', 'dd-mm-yyyy'));
+values (268, '14:00', 'SAT', to_date('13-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (269, '20 : 8', 'wed', to_date('07-06-2024', 'dd-mm-yyyy'));
+values (269, '17:00', 'SAT', to_date('13-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (270, '20 : 8', 'sat', to_date('08-06-2024', 'dd-mm-yyyy'));
+values (270, '20:00', 'SAT', to_date('13-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (271, '22 : 52', 'thu', to_date('21-06-2024', 'dd-mm-yyyy'));
+values (271, '23:00', 'SAT', to_date('13-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (272, '21 : 56', 'sun', to_date('29-06-2024', 'dd-mm-yyyy'));
+values (272, '14:00', 'SUN', to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (273, '18 : 32', 'sun', to_date('22-06-2024', 'dd-mm-yyyy'));
+values (273, '17:00', 'SUN', to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (274, '22 : 20', 'mon', to_date('24-06-2024', 'dd-mm-yyyy'));
+values (274, '20:00', 'SUN', to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (275, '20 : 1', 'wed', to_date('14-06-2024', 'dd-mm-yyyy'));
+values (275, '23:00', 'SUN', to_date('14-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (276, '18 : 8', 'fri', to_date('28-06-2024', 'dd-mm-yyyy'));
+values (276, '14:00', 'MON', to_date('15-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (277, '18 : 13', 'mon', to_date('04-06-2024', 'dd-mm-yyyy'));
+values (277, '17:00', 'MON', to_date('15-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (278, '18 : 19', 'tue', to_date('13-06-2024', 'dd-mm-yyyy'));
+values (278, '20:00', 'MON', to_date('15-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (279, '22 : 22', 'sun', to_date('07-06-2024', 'dd-mm-yyyy'));
+values (279, '23:00', 'MON', to_date('15-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (280, '22 : 3', 'mon', to_date('15-06-2024', 'dd-mm-yyyy'));
+values (280, '14:00', 'TUE', to_date('16-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (281, '19 : 8', 'sun', to_date('24-06-2024', 'dd-mm-yyyy'));
+values (281, '17:00', 'TUE', to_date('16-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (282, '20 : 25', 'thu', to_date('06-06-2024', 'dd-mm-yyyy'));
+values (282, '20:00', 'TUE', to_date('16-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (283, '22 : 36', 'thu', to_date('26-06-2024', 'dd-mm-yyyy'));
+values (283, '23:00', 'TUE', to_date('16-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (284, '21 : 3', 'mon', to_date('12-06-2024', 'dd-mm-yyyy'));
+values (284, '14:00', 'WED', to_date('17-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (285, '19 : 59', 'mon', to_date('13-06-2024', 'dd-mm-yyyy'));
+values (285, '17:00', 'WED', to_date('17-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (286, '19 : 35', 'wed', to_date('07-06-2024', 'dd-mm-yyyy'));
+values (286, '20:00', 'WED', to_date('17-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (287, '22 : 15', 'wed', to_date('19-06-2024', 'dd-mm-yyyy'));
+values (287, '23:00', 'WED', to_date('17-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (288, '23 : 48', 'sun', to_date('12-06-2024', 'dd-mm-yyyy'));
+values (288, '14:00', 'THU', to_date('18-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (289, '18 : 26', 'tue', to_date('10-06-2024', 'dd-mm-yyyy'));
+values (289, '17:00', 'THU', to_date('18-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (290, '21 : 43', 'thu', to_date('14-06-2024', 'dd-mm-yyyy'));
+values (290, '20:00', 'THU', to_date('18-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (291, '18 : 53', 'mon', to_date('26-06-2024', 'dd-mm-yyyy'));
+values (291, '23:00', 'THU', to_date('18-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (292, '20 : 24', 'thu', to_date('24-06-2024', 'dd-mm-yyyy'));
+values (292, '14:00', 'FRI', to_date('19-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (293, '21 : 16', 'fri', to_date('10-06-2024', 'dd-mm-yyyy'));
+values (293, '17:00', 'FRI', to_date('19-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (294, '23 : 42', 'tue', to_date('12-06-2024', 'dd-mm-yyyy'));
+values (294, '20:00', 'FRI', to_date('19-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (295, '22 : 20', 'sat', to_date('23-06-2024', 'dd-mm-yyyy'));
+values (295, '23:00', 'FRI', to_date('19-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (296, '22 : 38', 'thu', to_date('12-06-2024', 'dd-mm-yyyy'));
+values (296, '14:00', 'SAT', to_date('20-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (297, '20 : 36', 'tue', to_date('09-06-2024', 'dd-mm-yyyy'));
+values (297, '17:00', 'SAT', to_date('20-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (298, '18 : 43', 'fri', to_date('18-06-2024', 'dd-mm-yyyy'));
+values (298, '20:00', 'SAT', to_date('20-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (299, '21 : 47', 'tue', to_date('27-06-2024', 'dd-mm-yyyy'));
+values (299, '23:00', 'SAT', to_date('20-07-2024', 'dd-mm-yyyy'));
 commit;
 prompt 200 records committed...
 insert into DATES (dateid, hourh, dayd, dated)
-values (300, '22 : 5', 'sun', to_date('24-06-2024', 'dd-mm-yyyy'));
+values (300, '14:00', 'SUN', to_date('21-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (301, '20 : 3', 'tue', to_date('29-06-2024', 'dd-mm-yyyy'));
+values (301, '17:00', 'SUN', to_date('21-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (302, '20 : 22', 'fri', to_date('18-06-2024', 'dd-mm-yyyy'));
+values (302, '20:00', 'SUN', to_date('21-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (303, '22 : 6', 'wed', to_date('02-06-2024', 'dd-mm-yyyy'));
+values (303, '23:00', 'SUN', to_date('21-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (304, '21 : 25', 'tue', to_date('15-06-2024', 'dd-mm-yyyy'));
+values (304, '14:00', 'MON', to_date('22-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (305, '22 : 59', 'sun', to_date('19-06-2024', 'dd-mm-yyyy'));
+values (305, '17:00', 'MON', to_date('22-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (306, '20 : 53', 'sat', to_date('12-06-2024', 'dd-mm-yyyy'));
+values (306, '20:00', 'MON', to_date('22-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (307, '22 : 53', 'mon', to_date('24-06-2024', 'dd-mm-yyyy'));
+values (307, '23:00', 'MON', to_date('22-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (308, '23 : 29', 'fri', to_date('09-06-2024', 'dd-mm-yyyy'));
+values (308, '14:00', 'TUE', to_date('23-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (309, '22 : 35', 'thu', to_date('21-06-2024', 'dd-mm-yyyy'));
+values (309, '17:00', 'TUE', to_date('23-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (310, '21 : 16', 'fri', to_date('09-06-2024', 'dd-mm-yyyy'));
+values (310, '20:00', 'TUE', to_date('23-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (311, '23 : 46', 'tue', to_date('12-06-2024', 'dd-mm-yyyy'));
+values (311, '23:00', 'TUE', to_date('23-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (312, '22 : 32', 'thu', to_date('03-06-2024', 'dd-mm-yyyy'));
+values (312, '14:00', 'WED', to_date('24-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (313, '19 : 10', 'fri', to_date('14-06-2024', 'dd-mm-yyyy'));
+values (313, '17:00', 'WED', to_date('24-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (314, '18 : 35', 'sun', to_date('15-06-2024', 'dd-mm-yyyy'));
+values (314, '20:00', 'WED', to_date('24-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (315, '23 : 31', 'fri', to_date('06-06-2024', 'dd-mm-yyyy'));
+values (315, '23:00', 'WED', to_date('24-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (316, '22 : 24', 'mon', to_date('17-06-2024', 'dd-mm-yyyy'));
+values (316, '14:00', 'THU', to_date('25-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (317, '21 : 17', 'fri', to_date('24-06-2024', 'dd-mm-yyyy'));
+values (317, '17:00', 'THU', to_date('25-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (318, '21 : 1', 'thu', to_date('23-06-2024', 'dd-mm-yyyy'));
+values (318, '20:00', 'THU', to_date('25-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (319, '21 : 16', 'fri', to_date('14-06-2024', 'dd-mm-yyyy'));
+values (319, '23:00', 'THU', to_date('25-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (320, '20 : 44', 'thu', to_date('24-06-2024', 'dd-mm-yyyy'));
+values (320, '14:00', 'FRI', to_date('26-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (321, '22 : 56', 'sat', to_date('26-06-2024', 'dd-mm-yyyy'));
+values (321, '17:00', 'FRI', to_date('26-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (322, '19 : 11', 'thu', to_date('10-06-2024', 'dd-mm-yyyy'));
+values (322, '20:00', 'FRI', to_date('26-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (323, '23 : 41', 'thu', to_date('03-06-2024', 'dd-mm-yyyy'));
+values (323, '23:00', 'FRI', to_date('26-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (324, '18 : 8', 'sat', to_date('06-06-2024', 'dd-mm-yyyy'));
+values (324, '14:00', 'SAT', to_date('27-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (325, '18 : 46', 'thu', to_date('22-06-2024', 'dd-mm-yyyy'));
+values (325, '17:00', 'SAT', to_date('27-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (326, '23 : 12', 'thu', to_date('05-06-2024', 'dd-mm-yyyy'));
+values (326, '20:00', 'SAT', to_date('27-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (327, '19 : 11', 'sun', to_date('10-06-2024', 'dd-mm-yyyy'));
+values (327, '23:00', 'SAT', to_date('27-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (328, '21 : 19', 'sun', to_date('22-06-2024', 'dd-mm-yyyy'));
+values (328, '14:00', 'SUN', to_date('28-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (329, '21 : 15', 'thu', to_date('04-06-2024', 'dd-mm-yyyy'));
+values (329, '17:00', 'SUN', to_date('28-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (330, '20 : 58', 'tue', to_date('05-06-2024', 'dd-mm-yyyy'));
+values (330, '20:00', 'SUN', to_date('28-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (331, '19 : 6', 'thu', to_date('07-06-2024', 'dd-mm-yyyy'));
+values (331, '23:00', 'SUN', to_date('28-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (332, '21 : 23', 'mon', to_date('03-06-2024', 'dd-mm-yyyy'));
+values (332, '14:00', 'MON', to_date('29-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (333, '19 : 53', 'wed', to_date('01-06-2024', 'dd-mm-yyyy'));
+values (333, '17:00', 'MON', to_date('29-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (334, '20 : 19', 'fri', to_date('12-06-2024', 'dd-mm-yyyy'));
+values (334, '20:00', 'MON', to_date('29-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (335, '19 : 52', 'mon', to_date('21-06-2024', 'dd-mm-yyyy'));
+values (335, '23:00', 'MON', to_date('29-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (336, '19 : 56', 'fri', to_date('04-06-2024', 'dd-mm-yyyy'));
+values (336, '14:00', 'TUE', to_date('30-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (337, '22 : 19', 'sun', to_date('15-06-2024', 'dd-mm-yyyy'));
+values (337, '17:00', 'TUE', to_date('30-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (338, '20 : 13', 'sat', to_date('03-06-2024', 'dd-mm-yyyy'));
+values (338, '20:00', 'TUE', to_date('30-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (339, '23 : 11', 'mon', to_date('25-06-2024', 'dd-mm-yyyy'));
+values (339, '23:00', 'TUE', to_date('30-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (340, '19 : 20', 'mon', to_date('16-06-2024', 'dd-mm-yyyy'));
+values (340, '14:00', 'WED', to_date('31-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (341, '22 : 38', 'sun', to_date('07-06-2024', 'dd-mm-yyyy'));
+values (341, '17:00', 'WED', to_date('31-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (342, '21 : 53', 'sat', to_date('07-06-2024', 'dd-mm-yyyy'));
+values (342, '20:00', 'WED', to_date('31-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (343, '22 : 18', 'wed', to_date('27-06-2024', 'dd-mm-yyyy'));
+values (343, '23:00', 'WED', to_date('31-07-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (344, '20 : 47', 'sat', to_date('20-06-2024', 'dd-mm-yyyy'));
+values (344, '14:00', 'THU', to_date('01-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (345, '18 : 30', 'fri', to_date('11-06-2024', 'dd-mm-yyyy'));
+values (345, '17:00', 'THU', to_date('01-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (346, '21 : 6', 'fri', to_date('03-06-2024', 'dd-mm-yyyy'));
+values (346, '20:00', 'THU', to_date('01-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (347, '18 : 5', 'tue', to_date('24-06-2024', 'dd-mm-yyyy'));
+values (347, '23:00', 'THU', to_date('01-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (348, '20 : 38', 'wed', to_date('04-06-2024', 'dd-mm-yyyy'));
+values (348, '14:00', 'FRI', to_date('02-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (349, '23 : 17', 'thu', to_date('02-06-2024', 'dd-mm-yyyy'));
+values (349, '17:00', 'FRI', to_date('02-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (350, '23 : 19', 'wed', to_date('07-06-2024', 'dd-mm-yyyy'));
+values (350, '20:00', 'FRI', to_date('02-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (351, '18 : 15', 'mon', to_date('25-06-2024', 'dd-mm-yyyy'));
+values (351, '23:00', 'FRI', to_date('02-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (352, '21 : 28', 'sat', to_date('12-06-2024', 'dd-mm-yyyy'));
+values (352, '14:00', 'SAT', to_date('03-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (353, '23 : 23', 'sat', to_date('07-06-2024', 'dd-mm-yyyy'));
+values (353, '17:00', 'SAT', to_date('03-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (354, '21 : 49', 'sun', to_date('27-06-2024', 'dd-mm-yyyy'));
+values (354, '20:00', 'SAT', to_date('03-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (355, '22 : 36', 'fri', to_date('14-06-2024', 'dd-mm-yyyy'));
+values (355, '23:00', 'SAT', to_date('03-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (356, '20 : 21', 'fri', to_date('21-06-2024', 'dd-mm-yyyy'));
+values (356, '14:00', 'SUN', to_date('04-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (357, '21 : 16', 'mon', to_date('07-06-2024', 'dd-mm-yyyy'));
+values (357, '17:00', 'SUN', to_date('04-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (358, '22 : 0', 'fri', to_date('27-06-2024', 'dd-mm-yyyy'));
+values (358, '20:00', 'SUN', to_date('04-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (359, '22 : 7', 'fri', to_date('27-06-2024', 'dd-mm-yyyy'));
+values (359, '23:00', 'SUN', to_date('04-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (360, '22 : 2', 'thu', to_date('18-06-2024', 'dd-mm-yyyy'));
+values (360, '14:00', 'MON', to_date('05-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (361, '19 : 47', 'sat', to_date('16-06-2024', 'dd-mm-yyyy'));
+values (361, '17:00', 'MON', to_date('05-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (362, '20 : 27', 'thu', to_date('05-06-2024', 'dd-mm-yyyy'));
+values (362, '20:00', 'MON', to_date('05-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (363, '20 : 16', 'tue', to_date('25-06-2024', 'dd-mm-yyyy'));
+values (363, '23:00', 'MON', to_date('05-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (364, '22 : 3', 'mon', to_date('17-06-2024', 'dd-mm-yyyy'));
+values (364, '14:00', 'TUE', to_date('06-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (365, '18 : 14', 'sat', to_date('16-06-2024', 'dd-mm-yyyy'));
+values (365, '17:00', 'TUE', to_date('06-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (366, '20 : 16', 'sun', to_date('14-06-2024', 'dd-mm-yyyy'));
+values (366, '20:00', 'TUE', to_date('06-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (367, '20 : 3', 'mon', to_date('05-06-2024', 'dd-mm-yyyy'));
+values (367, '23:00', 'TUE', to_date('06-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (368, '18 : 0', 'fri', to_date('27-06-2024', 'dd-mm-yyyy'));
+values (368, '14:00', 'WED', to_date('07-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (369, '21 : 40', 'sat', to_date('29-06-2024', 'dd-mm-yyyy'));
+values (369, '17:00', 'WED', to_date('07-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (370, '20 : 6', 'tue', to_date('06-06-2024', 'dd-mm-yyyy'));
+values (370, '20:00', 'WED', to_date('07-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (371, '20 : 19', 'wed', to_date('16-06-2024', 'dd-mm-yyyy'));
+values (371, '23:00', 'WED', to_date('07-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (372, '22 : 42', 'mon', to_date('09-06-2024', 'dd-mm-yyyy'));
+values (372, '14:00', 'THU', to_date('08-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (373, '18 : 1', 'fri', to_date('28-06-2024', 'dd-mm-yyyy'));
+values (373, '17:00', 'THU', to_date('08-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (374, '23 : 26', 'sun', to_date('29-06-2024', 'dd-mm-yyyy'));
+values (374, '20:00', 'THU', to_date('08-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (375, '18 : 52', 'sun', to_date('06-06-2024', 'dd-mm-yyyy'));
+values (375, '23:00', 'THU', to_date('08-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (376, '18 : 21', 'thu', to_date('11-06-2024', 'dd-mm-yyyy'));
+values (376, '14:00', 'FRI', to_date('09-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (377, '19 : 15', 'thu', to_date('08-06-2024', 'dd-mm-yyyy'));
+values (377, '17:00', 'FRI', to_date('09-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (378, '21 : 45', 'wed', to_date('10-06-2024', 'dd-mm-yyyy'));
+values (378, '20:00', 'FRI', to_date('09-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (379, '21 : 42', 'wed', to_date('19-06-2024', 'dd-mm-yyyy'));
+values (379, '23:00', 'FRI', to_date('09-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (380, '19 : 45', 'mon', to_date('20-06-2024', 'dd-mm-yyyy'));
+values (380, '14:00', 'SAT', to_date('10-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (381, '18 : 40', 'sun', to_date('12-06-2024', 'dd-mm-yyyy'));
+values (381, '17:00', 'SAT', to_date('10-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (382, '20 : 44', 'tue', to_date('12-06-2024', 'dd-mm-yyyy'));
+values (382, '20:00', 'SAT', to_date('10-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (383, '20 : 7', 'tue', to_date('07-06-2024', 'dd-mm-yyyy'));
+values (383, '23:00', 'SAT', to_date('10-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (384, '19 : 30', 'fri', to_date('07-06-2024', 'dd-mm-yyyy'));
+values (384, '14:00', 'SUN', to_date('11-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (385, '19 : 56', 'sun', to_date('03-06-2024', 'dd-mm-yyyy'));
+values (385, '17:00', 'SUN', to_date('11-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (386, '18 : 24', 'wed', to_date('18-06-2024', 'dd-mm-yyyy'));
+values (386, '20:00', 'SUN', to_date('11-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (387, '20 : 2', 'fri', to_date('27-06-2024', 'dd-mm-yyyy'));
+values (387, '23:00', 'SUN', to_date('11-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (388, '20 : 7', 'mon', to_date('02-06-2024', 'dd-mm-yyyy'));
+values (388, '14:00', 'MON', to_date('12-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (389, '21 : 26', 'thu', to_date('28-06-2024', 'dd-mm-yyyy'));
+values (389, '17:00', 'MON', to_date('12-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (390, '21 : 21', 'tue', to_date('13-06-2024', 'dd-mm-yyyy'));
+values (390, '20:00', 'MON', to_date('12-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (391, '20 : 3', 'thu', to_date('29-06-2024', 'dd-mm-yyyy'));
+values (391, '23:00', 'MON', to_date('12-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (392, '20 : 19', 'sat', to_date('04-06-2024', 'dd-mm-yyyy'));
+values (392, '14:00', 'TUE', to_date('13-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (393, '23 : 19', 'sat', to_date('10-06-2024', 'dd-mm-yyyy'));
+values (393, '17:00', 'TUE', to_date('13-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (394, '21 : 57', 'tue', to_date('28-06-2024', 'dd-mm-yyyy'));
+values (394, '20:00', 'TUE', to_date('13-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (395, '23 : 41', 'wed', to_date('20-06-2024', 'dd-mm-yyyy'));
+values (395, '23:00', 'TUE', to_date('13-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (396, '19 : 8', 'mon', to_date('26-06-2024', 'dd-mm-yyyy'));
+values (396, '14:00', 'WED', to_date('14-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (397, '22 : 47', 'sun', to_date('23-06-2024', 'dd-mm-yyyy'));
+values (397, '17:00', 'WED', to_date('14-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (398, '21 : 28', 'mon', to_date('19-06-2024', 'dd-mm-yyyy'));
+values (398, '20:00', 'WED', to_date('14-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (399, '21 : 34', 'sun', to_date('25-06-2024', 'dd-mm-yyyy'));
+values (399, '23:00', 'WED', to_date('14-08-2024', 'dd-mm-yyyy'));
 commit;
 prompt 300 records committed...
 insert into DATES (dateid, hourh, dayd, dated)
-values (400, '18 : 8', 'sun', to_date('01-06-2024', 'dd-mm-yyyy'));
+values (400, '14:00', 'THU', to_date('15-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (401, '21 : 12', 'wed', to_date('26-06-2024', 'dd-mm-yyyy'));
+values (401, '17:00', 'THU', to_date('15-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (402, '23 : 19', 'thu', to_date('02-06-2024', 'dd-mm-yyyy'));
+values (402, '20:00', 'THU', to_date('15-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (403, '18 : 40', 'mon', to_date('23-06-2024', 'dd-mm-yyyy'));
+values (403, '23:00', 'THU', to_date('15-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (404, '19 : 37', 'fri', to_date('03-06-2024', 'dd-mm-yyyy'));
+values (404, '14:00', 'FRI', to_date('16-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (405, '20 : 22', 'sun', to_date('01-06-2024', 'dd-mm-yyyy'));
+values (405, '17:00', 'FRI', to_date('16-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (406, '22 : 11', 'fri', to_date('14-06-2024', 'dd-mm-yyyy'));
+values (406, '20:00', 'FRI', to_date('16-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (407, '19 : 22', 'tue', to_date('22-06-2024', 'dd-mm-yyyy'));
+values (407, '23:00', 'FRI', to_date('16-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (408, '18 : 44', 'wed', to_date('07-06-2024', 'dd-mm-yyyy'));
+values (408, '14:00', 'SAT', to_date('17-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (409, '18 : 36', 'sun', to_date('24-06-2024', 'dd-mm-yyyy'));
+values (409, '17:00', 'SAT', to_date('17-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (410, '21 : 18', 'mon', to_date('16-06-2024', 'dd-mm-yyyy'));
+values (410, '20:00', 'SAT', to_date('17-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (411, '19 : 45', 'sat', to_date('21-06-2024', 'dd-mm-yyyy'));
+values (411, '23:00', 'SAT', to_date('17-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (412, '20 : 48', 'wed', to_date('25-06-2024', 'dd-mm-yyyy'));
+values (412, '14:00', 'SUN', to_date('18-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (413, '23 : 2', 'mon', to_date('02-06-2024', 'dd-mm-yyyy'));
+values (413, '17:00', 'SUN', to_date('18-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (414, '23 : 33', 'fri', to_date('03-06-2024', 'dd-mm-yyyy'));
+values (414, '20:00', 'SUN', to_date('18-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (415, '22 : 46', 'wed', to_date('03-06-2024', 'dd-mm-yyyy'));
+values (415, '23:00', 'SUN', to_date('18-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (416, '18 : 22', 'fri', to_date('10-06-2024', 'dd-mm-yyyy'));
+values (416, '14:00', 'MON', to_date('19-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (417, '23 : 44', 'mon', to_date('06-06-2024', 'dd-mm-yyyy'));
+values (417, '17:00', 'MON', to_date('19-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (418, '20 : 42', 'sun', to_date('22-06-2024', 'dd-mm-yyyy'));
+values (418, '20:00', 'MON', to_date('19-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (419, '20 : 24', 'wed', to_date('14-06-2024', 'dd-mm-yyyy'));
+values (419, '23:00', 'MON', to_date('19-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (420, '23 : 26', 'tue', to_date('21-06-2024', 'dd-mm-yyyy'));
+values (420, '14:00', 'TUE', to_date('20-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (421, '19 : 53', 'tue', to_date('06-06-2024', 'dd-mm-yyyy'));
+values (421, '17:00', 'TUE', to_date('20-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (422, '20 : 34', 'thu', to_date('17-06-2024', 'dd-mm-yyyy'));
+values (422, '20:00', 'TUE', to_date('20-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (423, '22 : 50', 'sun', to_date('02-06-2024', 'dd-mm-yyyy'));
+values (423, '23:00', 'TUE', to_date('20-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (424, '19 : 41', 'thu', to_date('10-06-2024', 'dd-mm-yyyy'));
+values (424, '14:00', 'WED', to_date('21-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (425, '18 : 1', 'wed', to_date('04-06-2024', 'dd-mm-yyyy'));
+values (425, '17:00', 'WED', to_date('21-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (426, '21 : 14', 'tue', to_date('26-06-2024', 'dd-mm-yyyy'));
+values (426, '20:00', 'WED', to_date('21-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (427, '20 : 44', 'sun', to_date('21-06-2024', 'dd-mm-yyyy'));
+values (427, '23:00', 'WED', to_date('21-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (428, '21 : 39', 'wed', to_date('16-06-2024', 'dd-mm-yyyy'));
+values (428, '14:00', 'THU', to_date('22-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (429, '19 : 9', 'sun', to_date('26-06-2024', 'dd-mm-yyyy'));
+values (429, '17:00', 'THU', to_date('22-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (430, '22 : 13', 'wed', to_date('24-06-2024', 'dd-mm-yyyy'));
+values (430, '20:00', 'THU', to_date('22-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (431, '23 : 19', 'tue', to_date('08-06-2024', 'dd-mm-yyyy'));
+values (431, '23:00', 'THU', to_date('22-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (432, '23 : 52', 'tue', to_date('14-06-2024', 'dd-mm-yyyy'));
+values (432, '14:00', 'FRI', to_date('23-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (433, '19 : 3', 'mon', to_date('26-06-2024', 'dd-mm-yyyy'));
+values (433, '17:00', 'FRI', to_date('23-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (434, '20 : 38', 'sun', to_date('01-06-2024', 'dd-mm-yyyy'));
+values (434, '20:00', 'FRI', to_date('23-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (435, '21 : 38', 'sun', to_date('18-06-2024', 'dd-mm-yyyy'));
+values (435, '23:00', 'FRI', to_date('23-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (436, '22 : 5', 'mon', to_date('16-06-2024', 'dd-mm-yyyy'));
+values (436, '14:00', 'SAT', to_date('24-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (437, '23 : 20', 'mon', to_date('21-06-2024', 'dd-mm-yyyy'));
+values (437, '17:00', 'SAT', to_date('24-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (438, '18 : 25', 'tue', to_date('15-06-2024', 'dd-mm-yyyy'));
+values (438, '20:00', 'SAT', to_date('24-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (439, '20 : 41', 'sun', to_date('28-06-2024', 'dd-mm-yyyy'));
+values (439, '23:00', 'SAT', to_date('24-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (440, '21 : 29', 'sun', to_date('10-06-2024', 'dd-mm-yyyy'));
+values (440, '14:00', 'SUN', to_date('25-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (441, '18 : 41', 'sat', to_date('23-06-2024', 'dd-mm-yyyy'));
+values (441, '17:00', 'SUN', to_date('25-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (442, '19 : 31', 'thu', to_date('02-06-2024', 'dd-mm-yyyy'));
+values (442, '20:00', 'SUN', to_date('25-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (443, '22 : 40', 'sat', to_date('27-06-2024', 'dd-mm-yyyy'));
+values (443, '23:00', 'SUN', to_date('25-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (444, '19 : 48', 'wed', to_date('06-06-2024', 'dd-mm-yyyy'));
+values (444, '14:00', 'MON', to_date('26-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (445, '21 : 5', 'tue', to_date('06-06-2024', 'dd-mm-yyyy'));
+values (445, '17:00', 'MON', to_date('26-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (446, '21 : 2', 'sun', to_date('05-06-2024', 'dd-mm-yyyy'));
+values (446, '20:00', 'MON', to_date('26-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (447, '19 : 6', 'mon', to_date('27-06-2024', 'dd-mm-yyyy'));
+values (447, '23:00', 'MON', to_date('26-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (448, '23 : 35', 'wed', to_date('26-06-2024', 'dd-mm-yyyy'));
+values (448, '14:00', 'TUE', to_date('27-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (449, '20 : 56', 'sun', to_date('07-06-2024', 'dd-mm-yyyy'));
+values (449, '17:00', 'TUE', to_date('27-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (450, '18 : 29', 'wed', to_date('18-06-2024', 'dd-mm-yyyy'));
+values (450, '20:00', 'TUE', to_date('27-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (451, '22 : 4', 'mon', to_date('01-06-2024', 'dd-mm-yyyy'));
+values (451, '23:00', 'TUE', to_date('27-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (452, '22 : 19', 'tue', to_date('10-06-2024', 'dd-mm-yyyy'));
+values (452, '14:00', 'WED', to_date('28-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (453, '21 : 17', 'wed', to_date('03-06-2024', 'dd-mm-yyyy'));
+values (453, '17:00', 'WED', to_date('28-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (454, '19 : 54', 'sat', to_date('06-06-2024', 'dd-mm-yyyy'));
+values (454, '20:00', 'WED', to_date('28-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (455, '21 : 25', 'thu', to_date('17-06-2024', 'dd-mm-yyyy'));
+values (455, '23:00', 'WED', to_date('28-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (456, '19 : 40', 'wed', to_date('11-06-2024', 'dd-mm-yyyy'));
+values (456, '14:00', 'THU', to_date('29-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (457, '23 : 1', 'tue', to_date('20-06-2024', 'dd-mm-yyyy'));
+values (457, '17:00', 'THU', to_date('29-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (458, '23 : 5', 'fri', to_date('09-06-2024', 'dd-mm-yyyy'));
+values (458, '20:00', 'THU', to_date('29-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (459, '21 : 50', 'sun', to_date('25-06-2024', 'dd-mm-yyyy'));
+values (459, '23:00', 'THU', to_date('29-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (460, '23 : 37', 'fri', to_date('06-06-2024', 'dd-mm-yyyy'));
+values (460, '14:00', 'FRI', to_date('30-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (461, '19 : 1', 'mon', to_date('05-06-2024', 'dd-mm-yyyy'));
+values (461, '17:00', 'FRI', to_date('30-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (462, '19 : 46', 'tue', to_date('22-06-2024', 'dd-mm-yyyy'));
+values (462, '20:00', 'FRI', to_date('30-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (463, '21 : 12', 'wed', to_date('26-06-2024', 'dd-mm-yyyy'));
+values (463, '23:00', 'FRI', to_date('30-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (464, '21 : 42', 'sun', to_date('10-06-2024', 'dd-mm-yyyy'));
+values (464, '14:00', 'SAT', to_date('31-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (465, '18 : 23', 'sun', to_date('20-06-2024', 'dd-mm-yyyy'));
+values (465, '17:00', 'SAT', to_date('31-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (466, '21 : 50', 'tue', to_date('12-06-2024', 'dd-mm-yyyy'));
+values (466, '20:00', 'SAT', to_date('31-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (467, '21 : 38', 'tue', to_date('27-06-2024', 'dd-mm-yyyy'));
+values (467, '23:00', 'SAT', to_date('31-08-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (468, '22 : 9', 'thu', to_date('07-06-2024', 'dd-mm-yyyy'));
+values (468, '14:00', 'SUN', to_date('01-09-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (469, '20 : 34', 'tue', to_date('05-06-2024', 'dd-mm-yyyy'));
+values (469, '17:00', 'SUN', to_date('01-09-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (470, '23 : 24', 'mon', to_date('26-06-2024', 'dd-mm-yyyy'));
+values (470, '20:00', 'SUN', to_date('01-09-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (471, '23 : 44', 'wed', to_date('11-06-2024', 'dd-mm-yyyy'));
+values (471, '23:00', 'SUN', to_date('01-09-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (472, '18 : 5', 'sat', to_date('23-06-2024', 'dd-mm-yyyy'));
+values (472, '14:00', 'MON', to_date('02-09-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (473, '21 : 39', 'sat', to_date('26-06-2024', 'dd-mm-yyyy'));
+values (473, '17:00', 'MON', to_date('02-09-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (474, '23 : 10', 'fri', to_date('06-06-2024', 'dd-mm-yyyy'));
+values (474, '20:00', 'MON', to_date('02-09-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (475, '22 : 49', 'mon', to_date('08-06-2024', 'dd-mm-yyyy'));
+values (475, '23:00', 'MON', to_date('02-09-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (476, '23 : 46', 'tue', to_date('08-06-2024', 'dd-mm-yyyy'));
+values (476, '14:00', 'TUE', to_date('03-09-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (477, '22 : 26', 'fri', to_date('03-06-2024', 'dd-mm-yyyy'));
+values (477, '17:00', 'TUE', to_date('03-09-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (478, '20 : 28', 'wed', to_date('13-06-2024', 'dd-mm-yyyy'));
+values (478, '20:00', 'TUE', to_date('03-09-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (479, '19 : 0', 'sun', to_date('05-06-2024', 'dd-mm-yyyy'));
+values (479, '23:00', 'TUE', to_date('03-09-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (480, '23 : 41', 'wed', to_date('26-06-2024', 'dd-mm-yyyy'));
+values (480, '14:00', 'WED', to_date('04-09-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (481, '19 : 40', 'tue', to_date('28-06-2024', 'dd-mm-yyyy'));
+values (481, '17:00', 'WED', to_date('04-09-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (482, '21 : 32', 'fri', to_date('18-06-2024', 'dd-mm-yyyy'));
+values (482, '20:00', 'WED', to_date('04-09-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (483, '22 : 28', 'wed', to_date('18-06-2024', 'dd-mm-yyyy'));
+values (483, '23:00', 'WED', to_date('04-09-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (484, '20 : 49', 'mon', to_date('15-06-2024', 'dd-mm-yyyy'));
+values (484, '14:00', 'THU', to_date('05-09-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (485, '19 : 17', 'tue', to_date('27-06-2024', 'dd-mm-yyyy'));
+values (485, '17:00', 'THU', to_date('05-09-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (486, '19 : 37', 'thu', to_date('03-06-2024', 'dd-mm-yyyy'));
+values (486, '20:00', 'THU', to_date('05-09-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (487, '19 : 39', 'thu', to_date('29-06-2024', 'dd-mm-yyyy'));
+values (487, '23:00', 'THU', to_date('05-09-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (488, '22 : 47', 'fri', to_date('08-06-2024', 'dd-mm-yyyy'));
+values (488, '14:00', 'FRI', to_date('06-09-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (489, '18 : 29', 'sun', to_date('21-06-2024', 'dd-mm-yyyy'));
+values (489, '17:00', 'FRI', to_date('06-09-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (490, '18 : 15', 'mon', to_date('15-06-2024', 'dd-mm-yyyy'));
+values (490, '20:00', 'FRI', to_date('06-09-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (491, '18 : 23', 'wed', to_date('04-06-2024', 'dd-mm-yyyy'));
+values (491, '23:00', 'FRI', to_date('06-09-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (492, '22 : 5', 'thu', to_date('11-06-2024', 'dd-mm-yyyy'));
+values (492, '14:00', 'SAT', to_date('07-09-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (493, '23 : 1', 'fri', to_date('22-06-2024', 'dd-mm-yyyy'));
+values (493, '17:00', 'SAT', to_date('07-09-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (494, '22 : 25', 'sat', to_date('10-06-2024', 'dd-mm-yyyy'));
+values (494, '20:00', 'SAT', to_date('07-09-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (495, '22 : 6', 'sat', to_date('03-06-2024', 'dd-mm-yyyy'));
+values (495, '23:00', 'SAT', to_date('07-09-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (496, '20 : 11', 'sun', to_date('23-06-2024', 'dd-mm-yyyy'));
+values (496, '14:00', 'SUN', to_date('08-09-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (497, '19 : 19', 'thu', to_date('29-06-2024', 'dd-mm-yyyy'));
+values (497, '17:00', 'SUN', to_date('08-09-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (498, '23 : 40', 'mon', to_date('17-06-2024', 'dd-mm-yyyy'));
+values (498, '20:00', 'SUN', to_date('08-09-2024', 'dd-mm-yyyy'));
 insert into DATES (dateid, hourh, dayd, dated)
-values (499, '21 : 2', 'sat', to_date('21-06-2024', 'dd-mm-yyyy'));
+values (499, '23:00', 'SUN', to_date('08-09-2024', 'dd-mm-yyyy'));
 commit;
-prompt 400 records loaded
+prompt 400 records committed...
+insert into DATES (dateid, hourh, dayd, dated)
+values (500, '14:00', 'MON', to_date('09-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (501, '17:00', 'MON', to_date('09-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (502, '20:00', 'MON', to_date('09-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (503, '23:00', 'MON', to_date('09-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (504, '14:00', 'TUE', to_date('10-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (505, '17:00', 'TUE', to_date('10-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (506, '20:00', 'TUE', to_date('10-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (507, '23:00', 'TUE', to_date('10-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (508, '14:00', 'WED', to_date('11-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (509, '17:00', 'WED', to_date('11-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (510, '20:00', 'WED', to_date('11-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (511, '23:00', 'WED', to_date('11-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (512, '14:00', 'THU', to_date('12-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (513, '17:00', 'THU', to_date('12-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (514, '20:00', 'THU', to_date('12-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (515, '23:00', 'THU', to_date('12-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (516, '14:00', 'FRI', to_date('13-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (517, '17:00', 'FRI', to_date('13-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (518, '20:00', 'FRI', to_date('13-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (519, '23:00', 'FRI', to_date('13-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (520, '14:00', 'SAT', to_date('14-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (521, '17:00', 'SAT', to_date('14-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (522, '20:00', 'SAT', to_date('14-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (523, '23:00', 'SAT', to_date('14-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (524, '14:00', 'SUN', to_date('15-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (525, '17:00', 'SUN', to_date('15-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (526, '20:00', 'SUN', to_date('15-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (527, '23:00', 'SUN', to_date('15-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (528, '14:00', 'MON', to_date('16-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (529, '17:00', 'MON', to_date('16-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (530, '20:00', 'MON', to_date('16-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (531, '23:00', 'MON', to_date('16-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (532, '14:00', 'TUE', to_date('17-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (533, '17:00', 'TUE', to_date('17-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (534, '20:00', 'TUE', to_date('17-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (535, '23:00', 'TUE', to_date('17-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (536, '14:00', 'WED', to_date('18-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (537, '17:00', 'WED', to_date('18-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (538, '20:00', 'WED', to_date('18-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (539, '23:00', 'WED', to_date('18-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (540, '14:00', 'THU', to_date('19-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (541, '17:00', 'THU', to_date('19-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (542, '20:00', 'THU', to_date('19-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (543, '23:00', 'THU', to_date('19-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (544, '14:00', 'FRI', to_date('20-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (545, '17:00', 'FRI', to_date('20-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (546, '20:00', 'FRI', to_date('20-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (547, '23:00', 'FRI', to_date('20-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (548, '14:00', 'SAT', to_date('21-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (549, '17:00', 'SAT', to_date('21-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (550, '20:00', 'SAT', to_date('21-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (551, '23:00', 'SAT', to_date('21-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (552, '14:00', 'SUN', to_date('22-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (553, '17:00', 'SUN', to_date('22-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (554, '20:00', 'SUN', to_date('22-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (555, '23:00', 'SUN', to_date('22-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (556, '14:00', 'MON', to_date('23-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (557, '17:00', 'MON', to_date('23-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (558, '20:00', 'MON', to_date('23-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (559, '23:00', 'MON', to_date('23-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (560, '14:00', 'TUE', to_date('24-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (561, '17:00', 'TUE', to_date('24-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (562, '20:00', 'TUE', to_date('24-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (563, '23:00', 'TUE', to_date('24-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (564, '14:00', 'WED', to_date('25-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (565, '17:00', 'WED', to_date('25-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (566, '20:00', 'WED', to_date('25-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (567, '23:00', 'WED', to_date('25-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (568, '14:00', 'THU', to_date('26-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (569, '17:00', 'THU', to_date('26-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (570, '20:00', 'THU', to_date('26-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (571, '23:00', 'THU', to_date('26-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (572, '14:00', 'FRI', to_date('27-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (573, '17:00', 'FRI', to_date('27-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (574, '20:00', 'FRI', to_date('27-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (575, '23:00', 'FRI', to_date('27-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (576, '14:00', 'SAT', to_date('28-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (577, '17:00', 'SAT', to_date('28-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (578, '20:00', 'SAT', to_date('28-09-2024', 'dd-mm-yyyy'));
+insert into DATES (dateid, hourh, dayd, dated)
+values (579, '23:00', 'SAT', to_date('28-09-2024', 'dd-mm-yyyy'));
+commit;
+prompt 480 records loaded
 prompt Loading MOVIES...
 insert into MOVIES (movieid, title, genre, director, releasedate, duration, rating)
 values (100, 'Crash', 'Musical', 'Ulrike Do Rosario', to_date('24-07-2019', 'dd-mm-yyyy'), 102, 9);
@@ -4186,820 +4348,820 @@ commit;
 prompt 401 records loaded
 prompt Loading TICKETSALES...
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (100, 27.42, 'N', 181, 279);
+values (100, 30, 'N', 322, 451);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (101, 141.32, 'N', 130, 291);
+values (101, 30, 'N', 114, 416);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (102, 143.23, 'N', 164, 449);
+values (102, 30, 'N', 238, 367);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (103, 111.34, 'N', 119, 111);
+values (103, 30, 'N', 102, 498);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (104, 103.86, 'N', 401, 184);
+values (104, 90, 'N', 375, 432);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (105, 116.52, 'N', 127, 304);
+values (105, 30, 'N', 305, 439);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (106, 146.34, 'N', 177, 499);
+values (106, 50, 'N', 380, 166);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (107, 115.38, 'N', 280, 185);
+values (107, 90, 'N', 335, 397);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (108, 26.2, 'N', 327, 284);
+values (108, 90, 'N', 307, 250);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (109, 103.22, 'N', 185, 310);
+values (109, 30, 'N', 322, 345);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (110, 56.69, 'N', 440, 413);
+values (110, 30, 'N', 123, 154);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (111, 148.51, 'N', 125, 437);
+values (111, 30, 'N', 310, 255);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (112, 141.64, 'N', 461, 163);
+values (112, 30, 'N', 219, 300);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (113, 47.27, 'N', 476, 215);
+values (113, 30, 'N', 486, 429);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (114, 116.48, 'N', 121, 375);
+values (114, 30, 'N', 349, 341);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (115, 25.64, 'N', 152, 204);
+values (115, 30, 'N', 223, 340);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (116, 97.3, 'N', 195, 121);
+values (116, 30, 'N', 190, 377);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (117, 20.59, 'N', 470, 410);
+values (117, 30, 'N', 360, 406);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (118, 58.17, 'N', 379, 119);
+values (118, 30, 'N', 330, 278);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (119, 138.68, 'N', 445, 350);
+values (119, 30, 'N', 299, 282);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (120, 66.48, 'N', 198, 452);
+values (120, 30, 'N', 477, 354);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (121, 83.04, 'N', 307, 247);
+values (121, 30, 'N', 328, 486);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (122, 136.42, 'N', 138, 217);
+values (122, 30, 'N', 100, 129);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (123, 148.39, 'N', 447, 137);
+values (123, 30, 'N', 373, 140);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (124, 90.62, 'N', 195, 314);
+values (124, 30, 'N', 286, 457);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (125, 144.28, 'N', 178, 116);
+values (125, 30, 'N', 368, 449);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (126, 79.88, 'N', 264, 139);
+values (126, 30, 'N', 431, 149);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (127, 146.32, 'N', 337, 100);
+values (127, 30, 'N', 260, 286);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (128, 71.08, 'N', 338, 213);
+values (128, 30, 'N', 149, 337);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (129, 85.68, 'N', 494, 318);
+values (129, 30, 'N', 426, 323);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (130, 123.13, 'N', 139, 338);
+values (130, 90, 'N', 408, 155);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (131, 126.62, 'N', 403, 124);
+values (131, 90, 'N', 130, 471);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (132, 21.11, 'N', 180, 469);
+values (132, 90, 'N', 297, 148);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (133, 142.16, 'N', 464, 340);
+values (133, 30, 'N', 393, 254);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (134, 88.53, 'N', 237, 321);
+values (134, 30, 'N', 205, 207);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (135, 107.94, 'N', 418, 317);
+values (135, 30, 'N', 489, 105);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (136, 57.66, 'N', 457, 495);
+values (136, 30, 'N', 238, 423);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (137, 114.09, 'N', 268, 129);
+values (137, 30, 'N', 478, 387);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (138, 28.09, 'N', 294, 327);
+values (138, 30, 'N', 255, 476);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (139, 125.33, 'N', 215, 286);
+values (139, 30, 'N', 146, 134);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (140, 133.29, 'N', 457, 472);
+values (140, 30, 'N', 330, 341);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (141, 139.14, 'N', 434, 171);
+values (141, 30, 'N', 385, 333);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (142, 85.37, 'N', 292, 198);
+values (142, 50, 'N', 435, 323);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (143, 92.08, 'N', 261, 412);
+values (143, 30, 'N', 192, 109);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (144, 28, 'N', 194, 223);
+values (144, 30, 'N', 156, 414);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (145, 34.19, 'N', 413, 362);
+values (145, 30, 'N', 489, 253);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (146, 97.32, 'N', 227, 259);
+values (146, 90, 'N', 429, 175);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (147, 51.6, 'N', 232, 324);
+values (147, 30, 'N', 376, 466);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (148, 121.16, 'N', 188, 492);
+values (148, 50, 'N', 499, 353);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (149, 67.16, 'N', 353, 484);
+values (149, 30, 'N', 205, 328);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (150, 106.19, 'N', 284, 185);
+values (150, 30, 'N', 112, 200);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (151, 39.31, 'N', 393, 176);
+values (151, 90, 'N', 278, 398);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (152, 83.37, 'N', 438, 208);
+values (152, 30, 'N', 119, 146);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (153, 38.93, 'N', 473, 279);
+values (153, 30, 'N', 371, 232);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (154, 91.38, 'N', 218, 286);
+values (154, 30, 'N', 322, 176);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (155, 74.5, 'N', 162, 321);
+values (155, 90, 'N', 484, 132);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (156, 38.3, 'N', 195, 176);
+values (156, 50, 'N', 126, 336);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (157, 55.19, 'N', 442, 329);
+values (157, 30, 'N', 416, 213);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (158, 91.31, 'N', 321, 375);
+values (158, 30, 'N', 433, 172);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (159, 22.22, 'N', 299, 185);
+values (159, 50, 'N', 163, 404);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (160, 34.61, 'N', 138, 339);
+values (160, 90, 'N', 352, 288);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (161, 128.3, 'N', 347, 123);
+values (161, 30, 'N', 342, 162);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (162, 65.34, 'N', 404, 245);
+values (162, 30, 'N', 334, 425);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (163, 105.15, 'N', 268, 342);
+values (163, 30, 'N', 240, 330);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (164, 37.79, 'N', 152, 258);
+values (164, 30, 'N', 135, 474);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (165, 39.22, 'N', 477, 141);
+values (165, 30, 'N', 291, 294);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (166, 145.58, 'N', 368, 144);
+values (166, 90, 'N', 402, 407);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (167, 115.46, 'N', 420, 191);
+values (167, 90, 'N', 171, 489);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (168, 52.06, 'N', 299, 388);
+values (168, 30, 'N', 284, 337);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (169, 109.31, 'N', 290, 321);
+values (169, 30, 'N', 126, 215);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (170, 108.81, 'N', 380, 452);
+values (170, 30, 'N', 273, 305);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (171, 56.71, 'N', 167, 432);
+values (171, 30, 'N', 319, 389);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (172, 112.25, 'N', 193, 148);
+values (172, 30, 'N', 261, 178);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (173, 22.28, 'N', 192, 137);
+values (173, 30, 'N', 205, 407);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (174, 148.36, 'N', 247, 149);
+values (174, 30, 'N', 426, 498);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (175, 135.69, 'N', 154, 333);
+values (175, 30, 'N', 329, 348);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (176, 145.63, 'N', 380, 406);
+values (176, 30, 'N', 151, 223);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (177, 116.01, 'N', 112, 278);
+values (177, 30, 'N', 153, 493);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (178, 85.95, 'N', 394, 103);
+values (178, 30, 'N', 150, 226);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (179, 104.34, 'N', 436, 216);
+values (179, 50, 'N', 303, 167);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (180, 93.83, 'N', 106, 341);
+values (180, 30, 'N', 241, 497);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (181, 74.45, 'N', 476, 315);
+values (181, 30, 'N', 442, 319);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (182, 143.58, 'N', 435, 330);
+values (182, 50, 'N', 323, 273);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (183, 31.6, 'N', 254, 326);
+values (183, 30, 'N', 374, 206);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (184, 34.71, 'N', 299, 327);
+values (184, 50, 'N', 194, 305);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (185, 89.48, 'N', 382, 382);
+values (185, 50, 'N', 361, 227);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (186, 25.43, 'N', 152, 480);
+values (186, 30, 'N', 185, 435);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (187, 35.27, 'N', 207, 105);
+values (187, 90, 'N', 281, 458);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (188, 44.22, 'N', 137, 408);
+values (188, 30, 'N', 222, 104);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (189, 72.8, 'N', 175, 451);
+values (189, 50, 'N', 394, 129);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (190, 79.68, 'N', 466, 306);
+values (190, 30, 'N', 114, 194);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (191, 143.91, 'N', 429, 270);
+values (191, 30, 'N', 146, 422);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (192, 58.28, 'N', 428, 368);
+values (192, 90, 'N', 262, 177);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (193, 37.82, 'N', 423, 402);
+values (193, 90, 'N', 192, 184);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (194, 120.44, 'N', 416, 141);
+values (194, 90, 'N', 401, 203);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (195, 28.72, 'N', 366, 487);
+values (195, 30, 'N', 447, 182);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (196, 124.64, 'N', 185, 207);
+values (196, 90, 'N', 354, 108);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (197, 91.48, 'N', 491, 104);
+values (197, 50, 'N', 154, 269);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (198, 69.61, 'N', 131, 176);
+values (198, 30, 'N', 426, 149);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (199, 35.39, 'N', 147, 244);
+values (199, 30, 'N', 393, 281);
 commit;
 prompt 100 records committed...
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (200, 134.79, 'N', 397, 222);
+values (200, 30, 'N', 211, 261);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (201, 36.17, 'N', 316, 288);
+values (201, 30, 'N', 196, 259);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (202, 78.74, 'N', 205, 129);
+values (202, 30, 'N', 231, 238);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (203, 135.98, 'N', 359, 131);
+values (203, 30, 'N', 301, 395);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (204, 75.82, 'N', 209, 275);
+values (204, 30, 'N', 396, 449);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (205, 141.62, 'N', 182, 218);
+values (205, 90, 'N', 127, 299);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (206, 130.9, 'N', 275, 125);
+values (206, 30, 'N', 495, 262);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (207, 50.82, 'N', 228, 310);
+values (207, 30, 'N', 369, 405);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (208, 22.27, 'N', 291, 269);
+values (208, 90, 'N', 300, 212);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (209, 96.72, 'N', 496, 172);
+values (209, 90, 'N', 427, 280);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (210, 32.59, 'N', 393, 367);
+values (210, 30, 'N', 111, 278);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (211, 20.36, 'N', 185, 191);
+values (211, 30, 'N', 251, 279);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (212, 128.04, 'N', 221, 229);
+values (212, 50, 'N', 112, 294);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (213, 41.43, 'N', 362, 313);
+values (213, 30, 'N', 219, 112);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (214, 55.58, 'N', 402, 415);
+values (214, 30, 'N', 160, 484);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (215, 147.03, 'N', 451, 109);
+values (215, 90, 'N', 234, 342);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (216, 98.26, 'N', 253, 368);
+values (216, 30, 'N', 397, 114);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (217, 38.65, 'N', 156, 366);
+values (217, 30, 'N', 447, 404);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (218, 148.79, 'N', 111, 459);
+values (218, 30, 'N', 286, 290);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (219, 127.18, 'N', 402, 198);
+values (219, 90, 'N', 410, 353);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (220, 91.12, 'N', 293, 369);
+values (220, 50, 'N', 471, 447);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (221, 66.11, 'N', 102, 492);
+values (221, 30, 'N', 247, 333);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (222, 60.2, 'N', 271, 191);
+values (222, 30, 'N', 269, 198);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (223, 22.87, 'N', 351, 466);
+values (223, 30, 'N', 254, 176);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (224, 59.83, 'N', 479, 257);
+values (224, 30, 'N', 376, 488);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (225, 138.21, 'N', 445, 163);
+values (225, 30, 'N', 125, 322);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (226, 108.68, 'N', 346, 488);
+values (226, 30, 'N', 405, 474);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (227, 123.81, 'N', 121, 468);
+values (227, 30, 'N', 198, 463);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (228, 134.4, 'N', 150, 475);
+values (228, 90, 'N', 451, 138);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (229, 37.92, 'N', 428, 240);
+values (229, 30, 'N', 331, 315);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (230, 135.87, 'N', 296, 278);
+values (230, 50, 'N', 275, 221);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (231, 29.21, 'N', 419, 184);
+values (231, 30, 'N', 403, 118);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (232, 93.58, 'N', 424, 358);
+values (232, 30, 'N', 115, 278);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (233, 88.66, 'N', 468, 240);
+values (233, 30, 'N', 434, 453);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (234, 148.11, 'N', 342, 222);
+values (234, 90, 'N', 325, 461);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (235, 69.65, 'N', 212, 495);
+values (235, 50, 'N', 339, 186);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (236, 136.73, 'N', 374, 209);
+values (236, 30, 'N', 234, 234);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (237, 106.14, 'N', 325, 423);
+values (237, 30, 'N', 498, 146);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (238, 48.22, 'N', 349, 385);
+values (238, 30, 'N', 237, 401);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (239, 128.97, 'N', 103, 452);
+values (239, 30, 'N', 358, 114);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (240, 95.66, 'N', 400, 174);
+values (240, 50, 'N', 301, 465);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (241, 40.29, 'N', 486, 253);
+values (241, 30, 'N', 255, 351);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (242, 147.48, 'N', 397, 310);
+values (242, 30, 'N', 107, 114);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (243, 26.13, 'N', 101, 156);
+values (243, 30, 'N', 467, 436);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (244, 76.53, 'N', 405, 315);
+values (244, 30, 'N', 409, 429);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (245, 97.08, 'N', 331, 487);
+values (245, 50, 'N', 282, 244);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (246, 117.41, 'N', 158, 299);
+values (246, 50, 'N', 420, 414);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (247, 27.1, 'N', 205, 434);
+values (247, 90, 'N', 305, 239);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (248, 61.73, 'N', 371, 288);
+values (248, 50, 'N', 426, 460);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (249, 80.44, 'N', 316, 439);
+values (249, 90, 'N', 375, 298);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (250, 21.71, 'N', 268, 280);
+values (250, 30, 'N', 422, 326);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (251, 56.71, 'N', 169, 109);
+values (251, 30, 'N', 319, 250);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (252, 31.74, 'N', 136, 217);
+values (252, 30, 'N', 372, 447);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (253, 34.09, 'N', 142, 462);
+values (253, 90, 'N', 323, 156);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (254, 48.12, 'N', 107, 290);
+values (254, 30, 'N', 497, 168);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (255, 80.57, 'N', 485, 481);
+values (255, 30, 'N', 136, 300);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (256, 86.99, 'N', 363, 367);
+values (256, 30, 'N', 389, 104);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (257, 103.46, 'N', 133, 417);
+values (257, 30, 'N', 286, 109);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (258, 110.27, 'N', 367, 142);
+values (258, 30, 'N', 143, 221);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (259, 96.89, 'N', 154, 194);
+values (259, 30, 'N', 140, 404);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (260, 49.8, 'N', 319, 420);
+values (260, 30, 'N', 323, 448);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (261, 137.54, 'N', 210, 155);
+values (261, 30, 'N', 367, 165);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (262, 99.59, 'N', 435, 309);
+values (262, 30, 'N', 345, 206);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (263, 128.4, 'N', 460, 121);
+values (263, 30, 'N', 247, 234);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (264, 106.17, 'N', 453, 354);
+values (264, 30, 'N', 493, 472);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (265, 70.74, 'N', 467, 387);
+values (265, 30, 'N', 188, 331);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (266, 137.14, 'N', 162, 389);
+values (266, 30, 'N', 352, 357);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (267, 84.18, 'N', 349, 231);
+values (267, 30, 'N', 280, 199);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (268, 147.72, 'N', 162, 111);
+values (268, 50, 'N', 471, 220);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (269, 44.83, 'N', 144, 360);
+values (269, 30, 'N', 466, 482);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (270, 45.55, 'N', 440, 388);
+values (270, 30, 'N', 449, 499);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (271, 141.61, 'N', 201, 468);
+values (271, 50, 'N', 343, 111);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (272, 23.54, 'N', 377, 479);
+values (272, 30, 'N', 251, 266);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (273, 140.72, 'N', 203, 331);
+values (273, 30, 'N', 186, 239);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (274, 120.84, 'N', 178, 392);
+values (274, 30, 'N', 336, 320);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (275, 88.15, 'N', 406, 422);
+values (275, 30, 'N', 397, 271);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (276, 52.04, 'N', 128, 360);
+values (276, 30, 'N', 229, 384);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (277, 110.4, 'N', 306, 446);
+values (277, 90, 'N', 179, 447);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (278, 84.31, 'N', 474, 241);
+values (278, 90, 'N', 300, 449);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (279, 93.28, 'N', 338, 210);
+values (279, 30, 'N', 234, 132);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (280, 102.87, 'N', 327, 450);
+values (280, 30, 'N', 378, 224);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (281, 148.82, 'N', 185, 411);
+values (281, 30, 'N', 292, 243);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (282, 114.42, 'N', 395, 406);
+values (282, 50, 'N', 390, 328);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (283, 50.37, 'N', 131, 148);
+values (283, 30, 'N', 254, 186);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (284, 108.79, 'N', 337, 113);
+values (284, 30, 'N', 219, 390);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (285, 105.73, 'N', 219, 368);
+values (285, 90, 'N', 170, 136);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (286, 58.67, 'N', 346, 462);
+values (286, 30, 'N', 394, 490);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (287, 88.51, 'N', 454, 425);
+values (287, 90, 'N', 237, 229);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (288, 57.51, 'N', 151, 256);
+values (288, 90, 'N', 399, 312);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (289, 127.56, 'N', 411, 171);
+values (289, 50, 'N', 423, 282);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (290, 75.47, 'N', 250, 366);
+values (290, 30, 'N', 212, 431);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (291, 44.46, 'N', 286, 376);
+values (291, 90, 'N', 120, 442);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (292, 113.58, 'N', 165, 203);
+values (292, 30, 'N', 266, 121);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (293, 129.31, 'N', 159, 260);
+values (293, 30, 'N', 210, 355);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (294, 105.99, 'N', 121, 127);
+values (294, 30, 'N', 234, 488);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (295, 104.44, 'N', 291, 164);
+values (295, 30, 'N', 373, 464);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (296, 90.3, 'N', 153, 170);
+values (296, 90, 'N', 243, 127);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (297, 46.42, 'N', 436, 137);
+values (297, 30, 'N', 405, 226);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (298, 126.09, 'N', 238, 288);
+values (298, 90, 'N', 110, 110);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (299, 146.07, 'N', 191, 450);
+values (299, 30, 'N', 371, 467);
 commit;
 prompt 200 records committed...
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (300, 91.53, 'N', 244, 141);
+values (300, 30, 'N', 203, 291);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (301, 86.67, 'N', 360, 439);
+values (301, 90, 'N', 377, 239);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (302, 138.14, 'N', 121, 394);
+values (302, 30, 'N', 329, 139);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (303, 120.23, 'N', 145, 467);
+values (303, 30, 'N', 372, 230);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (304, 113.63, 'N', 295, 344);
+values (304, 50, 'N', 246, 100);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (305, 71.98, 'N', 171, 214);
+values (305, 30, 'N', 366, 279);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (306, 32.92, 'N', 306, 271);
+values (306, 30, 'N', 195, 279);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (307, 42.89, 'N', 121, 497);
+values (307, 30, 'N', 289, 220);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (308, 37.28, 'N', 464, 120);
+values (308, 30, 'N', 270, 446);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (309, 80.37, 'N', 209, 200);
+values (309, 90, 'N', 255, 456);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (310, 101.52, 'N', 123, 100);
+values (310, 50, 'N', 196, 172);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (311, 117.06, 'N', 472, 348);
+values (311, 90, 'N', 468, 256);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (312, 139.41, 'N', 191, 410);
+values (312, 90, 'N', 349, 292);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (313, 47.79, 'N', 285, 492);
+values (313, 30, 'N', 345, 173);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (314, 117.16, 'N', 262, 494);
+values (314, 30, 'N', 387, 480);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (315, 74.62, 'N', 108, 224);
+values (315, 30, 'N', 462, 193);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (316, 45.03, 'N', 368, 216);
+values (316, 90, 'N', 310, 160);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (317, 20.01, 'N', 255, 222);
+values (317, 30, 'N', 132, 406);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (318, 107.09, 'N', 161, 166);
+values (318, 30, 'N', 356, 347);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (319, 78.18, 'N', 279, 407);
+values (319, 50, 'N', 204, 196);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (320, 149.11, 'N', 316, 285);
+values (320, 30, 'N', 103, 394);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (321, 144.48, 'N', 200, 437);
+values (321, 30, 'N', 283, 373);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (322, 84.49, 'N', 168, 416);
+values (322, 90, 'N', 409, 487);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (323, 63, 'N', 340, 122);
+values (323, 90, 'N', 385, 210);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (324, 48.48, 'N', 359, 383);
+values (324, 30, 'N', 177, 242);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (325, 142.22, 'N', 197, 165);
+values (325, 30, 'N', 206, 217);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (326, 40.32, 'N', 125, 393);
+values (326, 30, 'N', 337, 251);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (327, 118.83, 'N', 333, 424);
+values (327, 90, 'N', 427, 239);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (328, 93.69, 'N', 399, 165);
+values (328, 30, 'N', 260, 129);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (329, 79.68, 'N', 496, 100);
+values (329, 30, 'N', 431, 475);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (330, 65.17, 'N', 340, 380);
+values (330, 30, 'N', 195, 306);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (331, 91.81, 'N', 360, 261);
+values (331, 90, 'N', 458, 223);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (332, 80.88, 'N', 493, 458);
+values (332, 30, 'N', 128, 332);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (333, 100.64, 'N', 495, 270);
+values (333, 30, 'N', 179, 353);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (334, 81.2, 'N', 162, 262);
+values (334, 30, 'N', 274, 108);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (335, 96.31, 'N', 357, 158);
+values (335, 90, 'N', 490, 305);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (336, 23.67, 'N', 225, 127);
+values (336, 50, 'N', 383, 453);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (337, 28.06, 'N', 111, 113);
+values (337, 50, 'N', 142, 406);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (338, 93.96, 'N', 155, 408);
+values (338, 30, 'N', 280, 176);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (339, 116.84, 'N', 269, 291);
+values (339, 30, 'N', 389, 317);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (340, 145.01, 'N', 484, 158);
+values (340, 90, 'N', 426, 498);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (341, 135.97, 'N', 362, 158);
+values (341, 30, 'N', 458, 406);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (342, 54.28, 'N', 275, 137);
+values (342, 30, 'N', 106, 371);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (343, 129.93, 'N', 228, 155);
+values (343, 30, 'N', 254, 444);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (344, 89.09, 'N', 436, 129);
+values (344, 30, 'N', 437, 349);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (345, 101.33, 'N', 336, 490);
+values (345, 30, 'N', 280, 424);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (346, 110.15, 'N', 443, 203);
+values (346, 90, 'N', 209, 165);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (347, 95.95, 'N', 324, 247);
+values (347, 30, 'N', 390, 308);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (348, 83.18, 'N', 102, 285);
+values (348, 50, 'N', 143, 442);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (349, 35.92, 'N', 170, 433);
+values (349, 90, 'N', 159, 299);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (350, 78.61, 'N', 322, 463);
+values (350, 50, 'N', 381, 123);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (351, 81.05, 'N', 382, 136);
+values (351, 30, 'N', 485, 437);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (352, 149.52, 'N', 130, 413);
+values (352, 30, 'N', 397, 436);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (353, 88.22, 'N', 421, 222);
+values (353, 90, 'N', 412, 318);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (354, 87.59, 'N', 291, 353);
+values (354, 90, 'N', 131, 172);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (355, 118.99, 'N', 137, 142);
+values (355, 30, 'N', 382, 143);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (356, 97.22, 'N', 373, 318);
+values (356, 30, 'N', 354, 296);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (357, 45.25, 'N', 245, 279);
+values (357, 30, 'N', 303, 288);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (358, 47.8, 'N', 419, 165);
+values (358, 50, 'N', 253, 280);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (359, 73.04, 'N', 210, 207);
+values (359, 90, 'N', 456, 197);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (360, 34.08, 'N', 461, 299);
+values (360, 90, 'N', 242, 161);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (361, 104.49, 'N', 370, 486);
+values (361, 30, 'N', 412, 210);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (362, 34.63, 'N', 242, 323);
+values (362, 30, 'N', 404, 329);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (363, 147.86, 'N', 278, 373);
+values (363, 30, 'N', 389, 303);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (364, 98.51, 'N', 379, 420);
+values (364, 90, 'N', 142, 225);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (365, 85.73, 'N', 470, 262);
+values (365, 30, 'N', 217, 159);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (366, 149.98, 'N', 137, 252);
+values (366, 30, 'N', 279, 389);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (367, 101.33, 'N', 458, 454);
+values (367, 30, 'N', 345, 170);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (368, 61.39, 'N', 240, 189);
+values (368, 50, 'N', 359, 205);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (369, 72.95, 'N', 144, 238);
+values (369, 90, 'N', 461, 152);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (370, 124.17, 'N', 296, 461);
+values (370, 30, 'N', 388, 196);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (371, 146.49, 'N', 272, 114);
+values (371, 30, 'N', 144, 195);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (372, 97.95, 'N', 459, 232);
+values (372, 50, 'N', 197, 424);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (373, 146.18, 'N', 286, 329);
+values (373, 50, 'N', 335, 431);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (374, 87.81, 'N', 104, 210);
+values (374, 30, 'N', 426, 227);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (375, 33.36, 'N', 430, 142);
+values (375, 50, 'N', 438, 130);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (376, 129.63, 'N', 333, 368);
+values (376, 30, 'N', 338, 479);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (377, 113.42, 'N', 462, 215);
+values (377, 50, 'N', 245, 128);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (378, 43.64, 'N', 309, 395);
+values (378, 30, 'N', 453, 370);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (379, 80.85, 'N', 200, 125);
+values (379, 30, 'N', 285, 162);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (380, 75.97, 'N', 209, 481);
+values (380, 30, 'N', 413, 319);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (381, 22.45, 'N', 287, 209);
+values (381, 90, 'N', 196, 351);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (382, 118.46, 'N', 403, 411);
+values (382, 30, 'N', 466, 203);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (383, 128.61, 'N', 386, 123);
+values (383, 30, 'N', 326, 385);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (384, 106.49, 'N', 464, 199);
+values (384, 30, 'N', 179, 121);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (385, 22.75, 'N', 397, 137);
+values (385, 30, 'N', 158, 451);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (386, 34.99, 'N', 393, 236);
+values (386, 30, 'N', 375, 473);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (387, 48.92, 'N', 300, 346);
+values (387, 50, 'N', 357, 276);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (388, 112.54, 'N', 478, 169);
+values (388, 30, 'N', 293, 166);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (389, 97.39, 'N', 225, 210);
+values (389, 90, 'N', 447, 301);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (390, 143.68, 'N', 175, 104);
+values (390, 30, 'N', 377, 159);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (391, 128.57, 'N', 342, 426);
+values (391, 30, 'N', 107, 172);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (392, 89.21, 'N', 411, 130);
+values (392, 30, 'N', 286, 309);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (393, 54.85, 'N', 178, 303);
+values (393, 30, 'N', 497, 167);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (394, 114.7, 'N', 115, 177);
+values (394, 30, 'N', 133, 362);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (395, 20.72, 'N', 167, 295);
+values (395, 30, 'N', 410, 341);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (396, 127.16, 'N', 175, 187);
+values (396, 30, 'N', 143, 257);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (397, 40.93, 'N', 209, 425);
+values (397, 50, 'N', 439, 191);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (398, 99.72, 'N', 417, 222);
+values (398, 50, 'N', 343, 165);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (399, 36.79, 'N', 469, 260);
+values (399, 90, 'N', 384, 461);
 commit;
 prompt 300 records committed...
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (400, 144.54, 'N', 411, 489);
+values (400, 30, 'N', 271, 245);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (401, 140.63, 'N', 393, 396);
+values (401, 30, 'N', 270, 255);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (402, 73.81, 'N', 101, 489);
+values (402, 30, 'N', 316, 123);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (403, 98.32, 'N', 351, 275);
+values (403, 30, 'N', 201, 291);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (404, 138.84, 'N', 263, 100);
+values (404, 90, 'N', 278, 109);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (405, 110, 'N', 303, 324);
+values (405, 50, 'N', 232, 265);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (406, 87.34, 'N', 380, 179);
+values (406, 50, 'N', 354, 125);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (407, 118.85, 'N', 298, 419);
+values (407, 50, 'N', 267, 351);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (408, 48.78, 'N', 354, 283);
+values (408, 30, 'N', 149, 365);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (409, 148.04, 'N', 384, 277);
+values (409, 50, 'N', 387, 421);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (410, 127.85, 'N', 432, 327);
+values (410, 30, 'N', 118, 477);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (411, 125.8, 'N', 357, 169);
+values (411, 90, 'N', 394, 192);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (412, 136.15, 'N', 162, 160);
+values (412, 30, 'N', 219, 476);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (413, 108.57, 'N', 128, 361);
+values (413, 90, 'N', 190, 296);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (414, 111.89, 'N', 375, 269);
+values (414, 30, 'N', 208, 172);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (415, 122.34, 'N', 311, 477);
+values (415, 30, 'N', 174, 275);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (416, 67.75, 'N', 190, 403);
+values (416, 50, 'N', 346, 336);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (417, 142.07, 'N', 249, 391);
+values (417, 30, 'N', 466, 306);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (418, 136.92, 'N', 244, 125);
+values (418, 30, 'N', 137, 372);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (419, 79.27, 'N', 250, 241);
+values (419, 30, 'N', 158, 243);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (420, 77.18, 'N', 147, 496);
+values (420, 50, 'N', 291, 138);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (421, 37.63, 'N', 460, 370);
+values (421, 30, 'N', 184, 390);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (422, 83.19, 'N', 165, 469);
+values (422, 30, 'N', 307, 273);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (423, 56.89, 'N', 351, 387);
+values (423, 30, 'N', 226, 397);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (424, 46.81, 'N', 322, 420);
+values (424, 30, 'N', 489, 256);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (425, 124.74, 'N', 444, 162);
+values (425, 30, 'N', 432, 280);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (426, 125.62, 'N', 131, 402);
+values (426, 30, 'N', 381, 189);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (427, 66.88, 'N', 249, 337);
+values (427, 30, 'N', 368, 371);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (428, 149.55, 'N', 153, 320);
+values (428, 90, 'N', 427, 311);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (429, 95.22, 'N', 433, 368);
+values (429, 30, 'N', 392, 182);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (430, 75.63, 'N', 173, 434);
+values (430, 90, 'N', 461, 223);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (431, 64.17, 'N', 414, 488);
+values (431, 90, 'N', 253, 209);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (432, 60.84, 'N', 410, 185);
+values (432, 30, 'N', 216, 254);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (433, 35.08, 'N', 180, 398);
+values (433, 30, 'N', 115, 246);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (434, 23.09, 'N', 142, 152);
+values (434, 30, 'N', 262, 141);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (435, 68.81, 'N', 328, 283);
+values (435, 30, 'N', 407, 237);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (436, 120.41, 'N', 166, 324);
+values (436, 30, 'N', 167, 238);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (437, 26.4, 'N', 336, 150);
+values (437, 90, 'N', 497, 443);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (438, 68.13, 'N', 277, 303);
+values (438, 30, 'N', 285, 451);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (439, 27.87, 'N', 254, 294);
+values (439, 30, 'N', 189, 138);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (440, 24.26, 'N', 172, 235);
+values (440, 30, 'N', 368, 493);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (441, 139.19, 'N', 224, 485);
+values (441, 30, 'N', 452, 438);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (442, 53.03, 'N', 183, 459);
+values (442, 90, 'N', 198, 272);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (443, 67.28, 'N', 219, 287);
+values (443, 50, 'N', 163, 432);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (444, 116.45, 'N', 232, 285);
+values (444, 30, 'N', 255, 398);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (445, 33.27, 'N', 414, 497);
+values (445, 50, 'N', 489, 268);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (446, 74.11, 'N', 209, 298);
+values (446, 50, 'N', 402, 415);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (447, 93.73, 'N', 181, 105);
+values (447, 30, 'N', 476, 342);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (448, 81.02, 'N', 180, 182);
+values (448, 30, 'N', 193, 362);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (449, 120.16, 'N', 100, 393);
+values (449, 30, 'N', 285, 217);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (450, 83.62, 'N', 417, 479);
+values (450, 50, 'N', 415, 455);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (451, 46.52, 'N', 210, 138);
+values (451, 50, 'N', 431, 478);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (452, 103.87, 'N', 452, 256);
+values (452, 90, 'N', 244, 496);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (453, 124.94, 'N', 471, 366);
+values (453, 30, 'N', 263, 290);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (454, 141.56, 'N', 361, 317);
+values (454, 50, 'N', 439, 206);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (455, 149.49, 'N', 260, 202);
+values (455, 30, 'N', 462, 306);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (456, 84.61, 'N', 264, 325);
+values (456, 50, 'N', 147, 486);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (457, 118.14, 'N', 488, 271);
+values (457, 30, 'N', 364, 484);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (458, 147.61, 'N', 461, 256);
+values (458, 30, 'N', 143, 397);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (459, 122.81, 'N', 345, 409);
+values (459, 30, 'N', 111, 428);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (460, 148.43, 'N', 184, 176);
+values (460, 90, 'N', 491, 271);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (461, 117.58, 'N', 263, 500);
+values (461, 30, 'N', 423, 269);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (462, 92.97, 'N', 178, 344);
+values (462, 30, 'N', 231, 145);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (463, 84.95, 'N', 314, 445);
+values (463, 30, 'N', 400, 452);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (464, 118.02, 'N', 309, 439);
+values (464, 50, 'N', 290, 319);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (465, 80.3, 'N', 425, 453);
+values (465, 90, 'N', 144, 462);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (466, 52.27, 'N', 190, 311);
+values (466, 30, 'N', 421, 435);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (467, 24.46, 'N', 425, 448);
+values (467, 90, 'N', 209, 469);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (468, 25.4, 'N', 441, 261);
+values (468, 90, 'N', 160, 295);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (469, 24.37, 'N', 305, 218);
+values (469, 50, 'N', 276, 298);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (470, 45.39, 'N', 165, 442);
+values (470, 90, 'N', 218, 387);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (471, 51.92, 'N', 321, 276);
+values (471, 50, 'N', 250, 128);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (472, 103.82, 'N', 257, 183);
+values (472, 50, 'N', 290, 146);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (473, 20.84, 'N', 103, 248);
+values (473, 30, 'N', 187, 110);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (474, 29.4, 'N', 135, 450);
+values (474, 50, 'N', 491, 338);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (475, 131.79, 'N', 405, 390);
+values (475, 30, 'N', 240, 114);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (476, 129.6, 'N', 292, 213);
+values (476, 30, 'N', 421, 368);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (477, 55.53, 'N', 268, 226);
+values (477, 30, 'N', 238, 402);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (478, 20.38, 'N', 278, 355);
+values (478, 30, 'N', 247, 114);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (479, 74.26, 'N', 416, 320);
+values (479, 30, 'N', 479, 419);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (480, 64.06, 'N', 106, 299);
+values (480, 30, 'N', 219, 285);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (481, 20.99, 'N', 471, 352);
+values (481, 30, 'N', 161, 120);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (482, 85.32, 'N', 284, 157);
+values (482, 30, 'N', 204, 105);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (483, 47.17, 'N', 400, 348);
+values (483, 30, 'N', 223, 214);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (484, 45.35, 'N', 465, 411);
+values (484, 90, 'N', 451, 323);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (485, 98.32, 'N', 179, 208);
+values (485, 50, 'N', 230, 134);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (486, 74.02, 'N', 334, 310);
+values (486, 30, 'N', 371, 342);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (487, 47.85, 'N', 490, 380);
+values (487, 90, 'N', 460, 135);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (488, 120.35, 'N', 311, 206);
+values (488, 90, 'N', 158, 284);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (489, 99.03, 'N', 434, 441);
+values (489, 30, 'N', 439, 311);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (490, 130.92, 'N', 478, 199);
+values (490, 50, 'N', 417, 368);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (491, 25.01, 'N', 278, 419);
+values (491, 30, 'N', 284, 146);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (492, 106.53, 'N', 141, 316);
+values (492, 30, 'N', 232, 423);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (493, 107, 'N', 421, 430);
+values (493, 30, 'N', 478, 183);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (494, 36.97, 'N', 404, 214);
+values (494, 30, 'N', 450, 318);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (495, 130.61, 'N', 190, 242);
+values (495, 90, 'N', 471, 222);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (496, 103.83, 'N', 180, 409);
+values (496, 30, 'N', 191, 122);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (497, 80.25, 'N', 452, 369);
+values (497, 30, 'N', 103, 435);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (498, 111.56, 'N', 418, 224);
+values (498, 50, 'N', 191, 389);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (499, 61.73, 'N', 464, 278);
+values (499, 30, 'N', 254, 219);
 commit;
 prompt 400 records loaded
 prompt Enabling foreign key constraints for SCHEDULES...
-alter table SCHEDULES enable constraint SYS_C007318;
-alter table SCHEDULES enable constraint SYS_C007319;
-alter table SCHEDULES enable constraint SYS_C007320;
+alter table SCHEDULES enable constraint SYS_C007920;
+alter table SCHEDULES enable constraint SYS_C007921;
+alter table SCHEDULES enable constraint SYS_C007922;
 prompt Enabling foreign key constraints for TICKETSALES...
-alter table TICKETSALES enable constraint SYS_C007326;
-alter table TICKETSALES enable constraint SYS_C007327;
+alter table TICKETSALES enable constraint SYS_C007930;
+alter table TICKETSALES enable constraint SYS_C007931;
 prompt Enabling triggers for DATES...
 alter table DATES enable all triggers;
 prompt Enabling triggers for MOVIES...
