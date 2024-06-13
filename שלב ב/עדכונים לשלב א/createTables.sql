@@ -31,7 +31,7 @@ CREATE TABLE Theaters (
 CREATE TABLE Schedules (
     ScheduleID NUMERIC(3) PRIMARY KEY,
     TheaterID NUMERIC(3) NOT NULL,
-    AvailableSeats INT DEFAULT 0 CHECK (AvailableSeats >= 0),--TheaterID.capacity לא שלילי, לא גדול מ
+    AvailableSeats INT DEFAULT 0 CHECK (AvailableSeats >= 0) NOT NULL,--TheaterID.capacity לא שלילי, לא גדול מ
     MovieID NUMERIC(3) NOT NULL, 
     DateID NUMERIC(3) NOT NULL, --\DateID.hour == 10,12,15,18,21
     UNIQUE(DateID, TheaterID),
@@ -51,7 +51,7 @@ CREATE TABLE Subscribers (
 -- ����� ���� ����� ��������
 CREATE TABLE TicketSales (
     TicketID NUMERIC(3) PRIMARY KEY,
-    Price NUMERIC(5, 2) DEFAULT 30 CHECK(Price IN (30, 50, 90)),
+    Price NUMERIC(5, 2) DEFAULT 30 CHECK(Price IN (30, 50, 90)) NOT NULL,
     IsSold CHAR(1) DEFAULT 'N' CHECK (IsSold IN ('Y', 'N')) NOT NULL,
     ScheduleID NUMERIC(3) NOT NULL,
     SubscriberID NUMERIC(3) DEFAULT NULL,
