@@ -107,12 +107,12 @@ alter table SUBSCRIBERS disable all triggers;
 prompt Disabling triggers for TICKETSALES...
 alter table TICKETSALES disable all triggers;
 prompt Disabling foreign key constraints for SCHEDULES...
-alter table SCHEDULES disable constraint SYS_C007988;
-alter table SCHEDULES disable constraint SYS_C007989;
-alter table SCHEDULES disable constraint SYS_C007990;
+alter table SCHEDULES disable constraint SYS_C008101;
+alter table SCHEDULES disable constraint SYS_C008102;
+alter table SCHEDULES disable constraint SYS_C008103;
 prompt Disabling foreign key constraints for TICKETSALES...
-alter table TICKETSALES disable constraint SYS_C007996;
-alter table TICKETSALES disable constraint SYS_C007997;
+alter table TICKETSALES disable constraint SYS_C008112;
+alter table TICKETSALES disable constraint SYS_C008113;
 prompt Deleting TICKETSALES...
 delete from TICKETSALES;
 commit;
@@ -1982,13 +1982,13 @@ commit;
 prompt 31 records loaded
 prompt Loading SCHEDULES...
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (100, 100, 242, 382, 563);
+values (100, 100, 241, 382, 563);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (101, 116, 70, 424, 383);
+values (101, 116, 69, 424, 383);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (102, 117, 289, 230, 417);
+values (102, 117, 287, 230, 417);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (103, 102, 167, 375, 321);
+values (103, 102, 166, 375, 321);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (105, 115, 57, 440, 483);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
@@ -1996,17 +1996,17 @@ values (106, 100, 242, 109, 192);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (108, 119, 199, 437, 197);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (109, 116, 70, 115, 576);
+values (109, 116, 69, 115, 576);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (110, 113, 172, 305, 183);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (111, 115, 57, 392, 171);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (112, 111, 278, 321, 433);
+values (112, 111, 277, 321, 433);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (113, 115, 57, 296, 214);
+values (113, 115, 56, 296, 214);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (115, 114, 188, 230, 113);
+values (115, 114, 187, 230, 113);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (116, 108, 151, 352, 503);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
@@ -2014,7 +2014,7 @@ values (117, 109, 216, 224, 217);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (118, 126, 71, 454, 184);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (119, 123, 165, 410, 127);
+values (119, 123, 164, 410, 127);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (120, 109, 216, 441, 208);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
@@ -2022,37 +2022,37 @@ values (121, 106, 138, 126, 362);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (122, 127, 121, 477, 504);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (123, 110, 148, 459, 305);
+values (123, 110, 146, 459, 305);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (124, 125, 51, 363, 558);
+values (124, 125, 50, 363, 558);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (125, 121, 58, 181, 558);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (126, 116, 70, 108, 114);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (127, 122, 144, 348, 104);
+values (127, 122, 142, 348, 104);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (128, 115, 57, 325, 552);
+values (128, 115, 55, 325, 552);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (129, 100, 242, 294, 112);
+values (129, 100, 240, 294, 112);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (130, 100, 242, 441, 118);
+values (130, 100, 237, 441, 118);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (131, 102, 167, 265, 551);
+values (131, 102, 163, 265, 551);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (132, 120, 284, 346, 280);
+values (132, 120, 282, 346, 280);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (133, 104, 263, 275, 384);
+values (133, 104, 262, 275, 384);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (134, 124, 242, 260, 198);
+values (134, 124, 241, 260, 198);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (135, 115, 57, 386, 514);
+values (135, 115, 55, 386, 514);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (136, 114, 188, 427, 434);
+values (136, 114, 187, 427, 434);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (137, 100, 242, 413, 261);
+values (137, 100, 241, 413, 261);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (138, 121, 58, 229, 113);
+values (138, 121, 57, 229, 113);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (139, 104, 263, 255, 559);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
@@ -2064,63 +2064,63 @@ values (142, 107, 33, 254, 426);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (143, 112, 296, 156, 307);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (144, 122, 144, 157, 381);
+values (144, 122, 142, 157, 381);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (146, 120, 284, 467, 337);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (147, 104, 263, 492, 164);
+values (147, 104, 260, 492, 164);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (148, 105, 168, 110, 265);
+values (148, 105, 166, 110, 265);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (149, 120, 284, 309, 124);
+values (149, 120, 283, 309, 124);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (150, 103, 251, 192, 349);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (151, 127, 121, 351, 456);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (152, 121, 58, 282, 179);
+values (152, 121, 57, 282, 179);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (153, 115, 57, 457, 380);
+values (153, 115, 56, 457, 380);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (154, 130, 94, 132, 365);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (155, 130, 94, 493, 208);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (156, 108, 151, 424, 369);
+values (156, 108, 150, 424, 369);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (157, 106, 138, 308, 557);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (158, 130, 94, 132, 165);
+values (158, 130, 92, 132, 165);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (159, 122, 144, 315, 385);
+values (159, 122, 142, 315, 385);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (160, 125, 51, 122, 494);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (161, 119, 199, 296, 411);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (162, 109, 216, 163, 291);
+values (162, 109, 215, 163, 291);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (163, 120, 284, 433, 547);
+values (163, 120, 283, 433, 547);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (164, 112, 296, 173, 434);
+values (164, 112, 295, 173, 434);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (165, 124, 242, 160, 168);
+values (165, 124, 241, 160, 168);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (166, 127, 121, 490, 169);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (168, 112, 296, 358, 415);
+values (168, 112, 294, 358, 415);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (169, 109, 216, 317, 106);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (170, 118, 162, 251, 379);
+values (170, 118, 161, 251, 379);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (171, 115, 57, 342, 431);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (172, 121, 58, 416, 358);
+values (172, 121, 57, 416, 358);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (173, 112, 296, 437, 175);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (174, 110, 148, 434, 322);
+values (174, 110, 147, 434, 322);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (175, 104, 263, 218, 448);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
@@ -2128,43 +2128,43 @@ values (176, 125, 51, 222, 415);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (178, 110, 148, 446, 568);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (179, 128, 260, 108, 298);
+values (179, 128, 258, 108, 298);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (180, 105, 168, 363, 414);
+values (180, 105, 167, 363, 414);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (181, 123, 165, 163, 517);
+values (181, 123, 164, 163, 517);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (182, 109, 216, 292, 247);
+values (182, 109, 214, 292, 247);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (183, 105, 168, 132, 547);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (184, 108, 151, 307, 329);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (185, 115, 57, 153, 304);
+values (185, 115, 56, 153, 304);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (186, 116, 70, 351, 293);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (187, 118, 162, 276, 463);
+values (187, 118, 161, 276, 463);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (188, 125, 51, 184, 261);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (189, 106, 138, 422, 350);
+values (189, 106, 137, 422, 350);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (190, 106, 138, 348, 156);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (191, 111, 278, 164, 256);
+values (191, 111, 277, 164, 256);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (192, 130, 94, 159, 381);
+values (192, 130, 93, 159, 381);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (193, 109, 216, 333, 553);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (194, 115, 57, 329, 308);
+values (194, 115, 56, 329, 308);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (195, 112, 296, 443, 284);
+values (195, 112, 295, 443, 284);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (196, 118, 162, 205, 434);
+values (196, 118, 161, 205, 434);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (197, 128, 260, 352, 192);
+values (197, 128, 259, 352, 192);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (198, 127, 121, 440, 367);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
@@ -2172,65 +2172,65 @@ values (199, 114, 188, 142, 163);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (200, 105, 168, 282, 190);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (201, 108, 151, 224, 177);
+values (201, 108, 150, 224, 177);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (202, 104, 263, 297, 385);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (203, 113, 172, 465, 155);
+values (203, 113, 170, 465, 155);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (204, 111, 278, 108, 370);
+values (204, 111, 277, 108, 370);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (205, 121, 58, 347, 218);
 commit;
 prompt 100 records committed...
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (206, 121, 58, 365, 417);
+values (206, 121, 57, 365, 417);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (207, 111, 278, 149, 203);
+values (207, 111, 276, 149, 203);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (208, 128, 260, 136, 225);
+values (208, 128, 259, 136, 225);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (209, 126, 71, 349, 463);
+values (209, 126, 69, 349, 463);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (210, 122, 144, 129, 461);
+values (210, 122, 142, 129, 461);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (211, 128, 260, 455, 395);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (212, 130, 94, 130, 371);
+values (212, 130, 92, 130, 371);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (213, 100, 242, 460, 404);
+values (213, 100, 240, 460, 404);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (214, 112, 296, 274, 412);
+values (214, 112, 295, 274, 412);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (215, 107, 33, 126, 404);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (216, 109, 216, 137, 370);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (217, 104, 263, 488, 377);
+values (217, 104, 262, 488, 377);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (218, 100, 242, 455, 112);
+values (218, 100, 241, 455, 112);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (219, 111, 278, 380, 449);
+values (219, 111, 275, 380, 449);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (220, 108, 151, 265, 149);
+values (220, 108, 150, 265, 149);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (221, 103, 251, 397, 518);
+values (221, 103, 250, 397, 518);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (222, 106, 138, 276, 132);
+values (222, 106, 137, 276, 132);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (223, 111, 278, 269, 291);
+values (223, 111, 276, 269, 291);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (224, 110, 148, 457, 389);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (225, 129, 99, 476, 169);
+values (225, 129, 97, 476, 169);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (226, 106, 138, 261, 461);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (227, 114, 188, 466, 194);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (228, 130, 94, 264, 218);
+values (228, 130, 92, 264, 218);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (229, 128, 260, 321, 480);
+values (229, 128, 259, 321, 480);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (230, 125, 51, 434, 384);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
@@ -2238,33 +2238,33 @@ values (231, 109, 216, 231, 368);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (232, 100, 242, 224, 419);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (233, 125, 51, 204, 284);
+values (233, 125, 50, 204, 284);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (234, 129, 99, 490, 411);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (235, 102, 167, 394, 534);
+values (235, 102, 166, 394, 534);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (236, 124, 242, 433, 113);
+values (236, 124, 240, 433, 113);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (237, 101, 193, 454, 113);
+values (237, 101, 192, 454, 113);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (238, 111, 278, 370, 273);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (239, 124, 242, 321, 184);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (240, 109, 216, 323, 487);
+values (240, 109, 214, 323, 487);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (241, 129, 99, 422, 540);
+values (241, 129, 98, 422, 540);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (242, 110, 148, 440, 408);
+values (242, 110, 147, 440, 408);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (243, 109, 216, 500, 321);
+values (243, 109, 215, 500, 321);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (244, 112, 296, 435, 107);
+values (244, 112, 294, 435, 107);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (245, 125, 51, 270, 324);
+values (245, 125, 50, 270, 324);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (246, 113, 172, 461, 419);
+values (246, 113, 171, 461, 419);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (247, 122, 144, 304, 247);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
@@ -2272,55 +2272,55 @@ values (248, 101, 193, 195, 481);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (249, 109, 216, 333, 348);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (250, 130, 94, 166, 575);
+values (250, 130, 92, 166, 575);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (251, 113, 172, 177, 578);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (252, 112, 296, 490, 411);
+values (252, 112, 295, 490, 411);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (253, 109, 216, 102, 468);
+values (253, 109, 215, 102, 468);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (254, 102, 167, 238, 136);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (255, 110, 148, 201, 140);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (256, 103, 251, 238, 203);
+values (256, 103, 249, 238, 203);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (258, 126, 71, 481, 573);
+values (258, 126, 70, 481, 573);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (259, 130, 94, 276, 126);
+values (259, 130, 93, 276, 126);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (260, 111, 278, 171, 205);
+values (260, 111, 275, 171, 205);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (261, 105, 168, 340, 551);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (262, 122, 144, 393, 271);
+values (262, 122, 143, 393, 271);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (263, 127, 121, 290, 350);
+values (263, 127, 120, 290, 350);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (264, 108, 151, 204, 311);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (265, 125, 51, 332, 180);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (266, 114, 188, 149, 262);
+values (266, 114, 187, 149, 262);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (267, 119, 199, 301, 418);
+values (267, 119, 198, 301, 418);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (268, 125, 51, 412, 420);
+values (268, 125, 50, 412, 420);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (269, 128, 260, 227, 268);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (270, 112, 296, 371, 445);
+values (270, 112, 295, 371, 445);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (271, 130, 94, 306, 528);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (272, 108, 151, 404, 374);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (273, 111, 278, 309, 462);
+values (273, 111, 276, 309, 462);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (274, 121, 58, 298, 208);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (275, 107, 33, 417, 439);
+values (275, 107, 32, 417, 439);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (276, 106, 138, 299, 452);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
@@ -2332,43 +2332,43 @@ values (279, 110, 148, 237, 164);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (280, 125, 51, 102, 325);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (281, 126, 71, 159, 468);
+values (281, 126, 70, 159, 468);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (282, 129, 99, 406, 490);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (283, 130, 94, 238, 137);
+values (283, 130, 92, 238, 137);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (284, 130, 94, 278, 574);
+values (284, 130, 92, 278, 574);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (285, 105, 168, 212, 249);
+values (285, 105, 166, 212, 249);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (286, 123, 165, 157, 220);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (287, 128, 260, 331, 355);
+values (287, 128, 259, 331, 355);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (288, 117, 289, 323, 487);
+values (288, 117, 288, 323, 487);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (289, 123, 165, 168, 491);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (290, 101, 193, 309, 367);
+values (290, 101, 191, 309, 367);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (291, 103, 251, 443, 391);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (292, 116, 70, 147, 326);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (293, 102, 167, 280, 314);
+values (293, 102, 166, 280, 314);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (294, 119, 199, 239, 110);
+values (294, 119, 198, 239, 110);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (295, 127, 121, 291, 218);
+values (295, 127, 120, 291, 218);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (296, 104, 263, 244, 574);
+values (296, 104, 262, 244, 574);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (297, 105, 168, 277, 106);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (298, 107, 33, 200, 250);
+values (298, 107, 31, 200, 250);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (299, 105, 168, 360, 243);
+values (299, 105, 167, 360, 243);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (300, 105, 168, 265, 324);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
@@ -2376,13 +2376,13 @@ values (301, 119, 199, 340, 267);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (302, 124, 242, 289, 505);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (303, 119, 199, 475, 307);
+values (303, 119, 198, 475, 307);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (304, 102, 167, 400, 121);
+values (304, 102, 166, 400, 121);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (305, 130, 94, 483, 578);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (306, 109, 216, 227, 159);
+values (306, 109, 215, 227, 159);
 commit;
 prompt 200 records committed...
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
@@ -2392,47 +2392,47 @@ values (308, 105, 168, 344, 435);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (309, 123, 165, 318, 177);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (310, 114, 188, 333, 185);
+values (310, 114, 185, 333, 185);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (311, 120, 284, 298, 250);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (312, 127, 121, 281, 130);
+values (312, 127, 120, 281, 130);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (313, 123, 165, 441, 472);
+values (313, 123, 164, 441, 472);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (314, 113, 172, 497, 218);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (315, 103, 251, 337, 561);
+values (315, 103, 249, 337, 561);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (316, 124, 242, 253, 452);
+values (316, 124, 241, 253, 452);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (317, 103, 251, 196, 333);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (318, 110, 148, 355, 480);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (319, 124, 242, 232, 148);
+values (319, 124, 241, 232, 148);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (320, 100, 242, 336, 425);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (321, 121, 58, 261, 180);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (322, 107, 33, 269, 253);
+values (322, 107, 31, 269, 253);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (323, 100, 242, 340, 434);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (324, 107, 33, 417, 561);
+values (324, 107, 31, 417, 561);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (325, 102, 167, 414, 356);
+values (325, 102, 166, 414, 356);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (326, 115, 57, 295, 368);
+values (326, 115, 56, 295, 368);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (327, 129, 99, 205, 107);
+values (327, 129, 97, 205, 107);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (328, 128, 260, 367, 291);
+values (328, 128, 259, 367, 291);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (329, 125, 51, 111, 242);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (330, 125, 51, 362, 183);
+values (330, 125, 50, 362, 183);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (331, 128, 260, 341, 339);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
@@ -2440,45 +2440,45 @@ values (332, 119, 199, 217, 230);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (333, 120, 284, 265, 107);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (334, 116, 70, 447, 483);
+values (334, 116, 68, 447, 483);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (335, 111, 278, 401, 211);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (336, 130, 94, 334, 314);
+values (336, 130, 93, 334, 314);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (337, 122, 144, 214, 547);
+values (337, 122, 142, 214, 547);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (338, 122, 144, 349, 574);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (339, 109, 216, 152, 252);
+values (339, 109, 215, 152, 252);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (340, 101, 193, 392, 473);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (341, 120, 284, 301, 112);
+values (341, 120, 282, 301, 112);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (342, 114, 188, 263, 575);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (343, 111, 278, 459, 167);
+values (343, 111, 277, 459, 167);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (344, 114, 188, 353, 517);
+values (344, 114, 186, 353, 517);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (345, 126, 71, 448, 132);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (346, 130, 94, 160, 574);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (347, 130, 94, 243, 175);
+values (347, 130, 92, 243, 175);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (348, 118, 162, 236, 108);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (349, 117, 289, 329, 238);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (350, 124, 242, 353, 446);
+values (350, 124, 240, 353, 446);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (352, 122, 144, 297, 224);
+values (352, 122, 142, 297, 224);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (353, 106, 138, 349, 366);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (354, 130, 94, 482, 504);
+values (354, 130, 93, 482, 504);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (355, 125, 51, 137, 131);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
@@ -2486,99 +2486,99 @@ values (356, 107, 33, 399, 249);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (357, 115, 57, 213, 161);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (358, 112, 296, 481, 208);
+values (358, 112, 292, 481, 208);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (360, 128, 260, 193, 250);
+values (360, 128, 259, 193, 250);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (361, 118, 162, 308, 413);
+values (361, 118, 160, 308, 413);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (362, 121, 58, 357, 352);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (363, 129, 99, 417, 126);
+values (363, 129, 98, 417, 126);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (365, 111, 278, 273, 194);
+values (365, 111, 277, 273, 194);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (366, 121, 58, 366, 453);
+values (366, 121, 57, 366, 453);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (367, 126, 71, 455, 317);
+values (367, 126, 69, 455, 317);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (368, 108, 151, 227, 230);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (369, 115, 57, 375, 144);
+values (369, 115, 56, 375, 144);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (370, 114, 188, 384, 212);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (371, 123, 165, 316, 187);
+values (371, 123, 164, 316, 187);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (372, 119, 199, 265, 481);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (373, 122, 144, 485, 495);
+values (373, 122, 143, 485, 495);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (374, 116, 70, 486, 487);
+values (374, 116, 68, 486, 487);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (375, 103, 251, 290, 505);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (376, 128, 260, 340, 193);
+values (376, 128, 259, 340, 193);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (377, 101, 193, 252, 148);
+values (377, 101, 192, 252, 148);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (378, 102, 167, 318, 273);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (379, 122, 144, 130, 383);
+values (379, 122, 139, 130, 383);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (380, 105, 168, 450, 347);
+values (380, 105, 167, 450, 347);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (381, 127, 121, 481, 432);
+values (381, 127, 120, 481, 432);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (382, 105, 168, 474, 198);
+values (382, 105, 167, 474, 198);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (383, 128, 260, 433, 259);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (384, 128, 260, 228, 575);
+values (384, 128, 259, 228, 575);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (385, 105, 168, 101, 317);
+values (385, 105, 166, 101, 317);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (386, 125, 51, 270, 407);
+values (386, 125, 50, 270, 407);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (387, 120, 284, 410, 267);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (388, 110, 148, 317, 401);
+values (388, 110, 147, 317, 401);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (389, 124, 242, 349, 181);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (390, 111, 278, 319, 152);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (391, 126, 71, 462, 286);
+values (391, 126, 69, 462, 286);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (392, 111, 278, 145, 119);
+values (392, 111, 277, 145, 119);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (393, 114, 188, 138, 338);
+values (393, 114, 187, 138, 338);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (394, 113, 172, 308, 120);
+values (394, 113, 169, 308, 120);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (395, 114, 188, 358, 377);
+values (395, 114, 187, 358, 377);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (396, 129, 99, 500, 256);
+values (396, 129, 98, 500, 256);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (397, 104, 263, 236, 127);
+values (397, 104, 261, 236, 127);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (398, 109, 216, 368, 489);
+values (398, 109, 214, 368, 489);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (399, 122, 144, 208, 265);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (400, 106, 138, 101, 533);
+values (400, 106, 137, 101, 533);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (401, 104, 263, 237, 132);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (402, 101, 193, 455, 446);
+values (402, 101, 192, 455, 446);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (403, 109, 216, 239, 290);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (404, 121, 58, 184, 391);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (405, 110, 148, 341, 381);
+values (405, 110, 147, 341, 381);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (406, 119, 199, 121, 579);
+values (406, 119, 198, 121, 579);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (407, 116, 70, 165, 385);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
@@ -2588,83 +2588,83 @@ values (409, 108, 151, 326, 275);
 commit;
 prompt 300 records committed...
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (410, 109, 216, 292, 225);
+values (410, 109, 215, 292, 225);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (411, 117, 289, 169, 101);
+values (411, 117, 287, 169, 101);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (412, 108, 151, 315, 208);
+values (412, 108, 149, 315, 208);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (413, 114, 188, 123, 432);
+values (413, 114, 187, 123, 432);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (414, 115, 57, 238, 268);
+values (414, 115, 56, 238, 268);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (415, 115, 57, 277, 355);
+values (415, 115, 55, 277, 355);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (416, 129, 99, 151, 111);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (417, 115, 57, 392, 272);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (418, 108, 151, 154, 301);
+values (418, 108, 149, 154, 301);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (419, 122, 144, 125, 295);
+values (419, 122, 143, 125, 295);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (420, 109, 216, 394, 435);
+values (420, 109, 215, 394, 435);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (421, 109, 216, 295, 431);
+values (421, 109, 214, 295, 431);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (422, 111, 278, 132, 229);
+values (422, 111, 277, 132, 229);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (423, 130, 94, 347, 375);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (424, 117, 289, 246, 528);
+values (424, 117, 287, 246, 528);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (425, 108, 151, 475, 272);
+values (425, 108, 149, 475, 272);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (426, 115, 57, 336, 206);
+values (426, 115, 56, 336, 206);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (428, 111, 278, 475, 252);
+values (428, 111, 277, 475, 252);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (429, 112, 296, 426, 312);
+values (429, 112, 295, 426, 312);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (430, 110, 148, 375, 142);
+values (430, 110, 147, 375, 142);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (431, 120, 284, 435, 180);
+values (431, 120, 283, 435, 180);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (432, 103, 251, 380, 340);
+values (432, 103, 249, 380, 340);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (433, 119, 199, 273, 220);
+values (433, 119, 197, 273, 220);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (434, 130, 94, 284, 103);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (435, 105, 168, 493, 448);
+values (435, 105, 167, 493, 448);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (436, 100, 242, 372, 169);
+values (436, 100, 240, 372, 169);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (437, 128, 260, 143, 262);
+values (437, 128, 259, 143, 262);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (438, 126, 71, 292, 300);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (439, 109, 216, 455, 461);
+values (439, 109, 215, 455, 461);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (440, 110, 148, 145, 195);
+values (440, 110, 146, 145, 195);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (441, 112, 296, 342, 300);
+values (441, 112, 294, 342, 300);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (442, 103, 251, 204, 198);
+values (442, 103, 250, 204, 198);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (443, 117, 289, 133, 110);
+values (443, 117, 288, 133, 110);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (444, 121, 58, 455, 104);
+values (444, 121, 56, 455, 104);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (445, 122, 144, 329, 235);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (446, 123, 165, 369, 238);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (447, 128, 260, 178, 479);
+values (447, 128, 257, 178, 479);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (448, 100, 242, 490, 543);
+values (448, 100, 241, 490, 543);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (449, 103, 251, 492, 479);
+values (449, 103, 248, 492, 479);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (450, 125, 51, 258, 488);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
@@ -2676,15 +2676,15 @@ values (454, 115, 57, 242, 561);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (455, 124, 242, 435, 455);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (456, 123, 165, 115, 186);
+values (456, 123, 164, 115, 186);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (457, 129, 99, 187, 449);
+values (457, 129, 97, 187, 449);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (458, 114, 188, 162, 492);
+values (458, 114, 187, 162, 492);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (459, 115, 57, 127, 514);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (460, 130, 94, 234, 480);
+values (460, 130, 93, 234, 480);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (461, 116, 70, 315, 315);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
@@ -2694,27 +2694,27 @@ values (463, 108, 151, 305, 167);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (464, 106, 138, 283, 420);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (465, 125, 51, 154, 203);
+values (465, 125, 49, 154, 203);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (466, 124, 242, 392, 383);
+values (466, 124, 240, 392, 383);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (467, 113, 172, 449, 561);
+values (467, 113, 171, 449, 561);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (468, 110, 148, 250, 202);
+values (468, 110, 146, 250, 202);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (469, 125, 51, 161, 141);
+values (469, 125, 50, 161, 141);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (470, 104, 263, 121, 300);
+values (470, 104, 261, 121, 300);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (471, 100, 242, 332, 322);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (472, 128, 260, 409, 368);
+values (472, 128, 259, 409, 368);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (473, 110, 148, 371, 439);
+values (473, 110, 147, 371, 439);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (474, 102, 167, 176, 505);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (475, 127, 121, 192, 293);
+values (475, 127, 118, 192, 293);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (476, 106, 138, 291, 385);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
@@ -2722,47 +2722,47 @@ values (477, 102, 167, 169, 317);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (478, 101, 193, 387, 163);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (479, 127, 121, 110, 233);
+values (479, 127, 120, 110, 233);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (480, 113, 172, 464, 559);
+values (480, 113, 171, 464, 559);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (481, 126, 71, 472, 178);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (482, 101, 193, 302, 260);
+values (482, 101, 192, 302, 260);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (483, 101, 193, 182, 420);
+values (483, 101, 190, 182, 420);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (484, 127, 121, 305, 374);
+values (484, 127, 120, 305, 374);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (485, 123, 165, 300, 163);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (486, 123, 165, 170, 136);
+values (486, 123, 164, 170, 136);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (487, 126, 71, 294, 156);
+values (487, 126, 68, 294, 156);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (488, 107, 33, 177, 290);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (489, 111, 278, 150, 140);
+values (489, 111, 277, 150, 140);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (490, 125, 51, 311, 258);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (491, 110, 148, 299, 106);
+values (491, 110, 146, 299, 106);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (492, 118, 162, 401, 365);
+values (492, 118, 161, 401, 365);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (493, 129, 99, 174, 133);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (494, 128, 260, 492, 468);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (495, 106, 138, 191, 333);
+values (495, 106, 136, 191, 333);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (496, 123, 165, 233, 419);
+values (496, 123, 163, 233, 419);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (497, 118, 162, 353, 295);
+values (497, 118, 161, 353, 295);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (498, 100, 242, 102, 208);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
-values (499, 108, 151, 281, 401);
+values (499, 108, 150, 281, 401);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
 values (500, 113, 172, 441, 445);
 insert into SCHEDULES (scheduleid, theaterid, availableseats, movieid, dateid)
@@ -3868,698 +3868,698 @@ values (149, 50, 'N', 444, 391);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
 values (150, 30, 'N', 317, 465);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (151, 30, 'N', 444, 368);
+values (151, 30, 'Y', 444, 368);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (152, 90, 'N', 465, 473);
+values (152, 90, 'Y', 465, 473);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (153, 30, 'N', 374, 354);
+values (153, 30, 'Y', 374, 354);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (154, 30, 'N', 396, 251);
+values (154, 30, 'Y', 396, 251);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (155, 30, 'N', 430, 353);
+values (155, 30, 'Y', 430, 353);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (156, 90, 'N', 472, 189);
+values (156, 90, 'Y', 472, 189);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (157, 30, 'N', 341, 147);
+values (157, 30, 'Y', 341, 147);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (158, 30, 'N', 328, 376);
+values (158, 30, 'Y', 328, 376);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (159, 50, 'N', 483, 500);
+values (159, 50, 'Y', 483, 500);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (161, 30, 'N', 334, 183);
+values (161, 30, 'Y', 334, 183);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (162, 30, 'N', 128, 279);
+values (162, 30, 'Y', 128, 279);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (163, 30, 'N', 236, 442);
+values (163, 30, 'Y', 236, 442);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (164, 30, 'N', 496, 164);
+values (164, 30, 'Y', 496, 164);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (165, 30, 'N', 100, 464);
+values (165, 30, 'Y', 100, 464);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (166, 30, 'N', 287, 191);
+values (166, 30, 'Y', 287, 191);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (167, 30, 'N', 219, 294);
+values (167, 30, 'Y', 219, 294);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (168, 50, 'N', 266, 320);
+values (168, 50, 'Y', 266, 320);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (169, 50, 'N', 219, 358);
+values (169, 50, 'Y', 219, 358);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (170, 30, 'N', 449, 498);
+values (170, 30, 'Y', 449, 498);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (171, 50, 'N', 130, 423);
+values (171, 50, 'Y', 130, 423);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (172, 30, 'N', 341, 217);
+values (172, 30, 'Y', 341, 217);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (173, 90, 'N', 379, 375);
+values (173, 90, 'Y', 379, 375);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (174, 30, 'N', 486, 320);
+values (174, 30, 'Y', 486, 320);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (175, 90, 'N', 315, 425);
+values (175, 90, 'Y', 315, 425);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (176, 30, 'N', 158, 209);
+values (176, 30, 'Y', 158, 209);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (178, 30, 'N', 369, 493);
+values (178, 30, 'Y', 369, 493);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (179, 90, 'N', 440, 498);
+values (179, 90, 'Y', 440, 498);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (180, 30, 'N', 196, 250);
+values (180, 30, 'Y', 196, 250);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (181, 30, 'N', 366, 370);
+values (181, 30, 'Y', 366, 370);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (182, 50, 'N', 448, 129);
+values (182, 50, 'Y', 448, 129);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (184, 50, 'N', 244, 463);
+values (184, 50, 'Y', 244, 463);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (185, 30, 'N', 385, 246);
+values (185, 30, 'Y', 385, 246);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (186, 30, 'N', 124, 409);
+values (186, 30, 'Y', 124, 409);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (187, 30, 'N', 229, 124);
+values (187, 30, 'Y', 229, 124);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (188, 30, 'N', 483, 120);
+values (188, 30, 'Y', 483, 120);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (189, 30, 'N', 179, 395);
+values (189, 30, 'Y', 179, 395);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (190, 30, 'N', 127, 341);
+values (190, 30, 'Y', 127, 341);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (191, 30, 'N', 303, 268);
+values (191, 30, 'Y', 303, 268);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (192, 50, 'N', 159, 217);
+values (192, 50, 'Y', 159, 217);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (193, 50, 'N', 304, 454);
+values (193, 50, 'Y', 304, 454);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (194, 30, 'N', 386, 146);
+values (194, 30, 'Y', 386, 146);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (195, 30, 'N', 489, 416);
+values (195, 30, 'Y', 489, 416);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (196, 90, 'N', 256, 444);
+values (196, 90, 'Y', 256, 444);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (197, 30, 'N', 470, 254);
+values (197, 30, 'Y', 470, 254);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (198, 30, 'N', 310, 232);
+values (198, 30, 'Y', 310, 232);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (199, 90, 'N', 381, 409);
+values (199, 90, 'Y', 381, 409);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (200, 50, 'N', 172, 164);
+values (200, 50, 'Y', 172, 164);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (201, 30, 'N', 225, 392);
+values (201, 30, 'Y', 225, 392);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (202, 30, 'N', 256, 163);
+values (202, 30, 'Y', 256, 163);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (204, 30, 'N', 397, 190);
+values (204, 30, 'Y', 397, 190);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (205, 30, 'N', 421, 405);
+values (205, 30, 'Y', 421, 405);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (206, 30, 'N', 213, 440);
+values (206, 30, 'Y', 213, 440);
 commit;
 prompt 100 records committed...
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (207, 90, 'N', 391, 139);
+values (207, 90, 'Y', 391, 139);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (208, 50, 'N', 384, 154);
+values (208, 50, 'Y', 384, 154);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (209, 30, 'N', 296, 147);
+values (209, 30, 'Y', 296, 147);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (210, 30, 'N', 467, 271);
+values (210, 30, 'Y', 467, 271);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (212, 50, 'N', 424, 287);
+values (212, 50, 'Y', 424, 287);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (213, 50, 'N', 144, 363);
+values (213, 50, 'Y', 144, 363);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (214, 90, 'N', 284, 153);
+values (214, 90, 'Y', 284, 153);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (215, 90, 'N', 253, 416);
+values (215, 90, 'Y', 253, 416);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (216, 50, 'N', 324, 392);
+values (216, 50, 'Y', 324, 392);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (217, 30, 'N', 394, 464);
+values (217, 30, 'Y', 394, 464);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (218, 30, 'N', 181, 440);
+values (218, 30, 'Y', 181, 440);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (219, 30, 'N', 194, 459);
+values (219, 30, 'Y', 194, 459);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (220, 90, 'N', 482, 418);
+values (220, 90, 'Y', 482, 418);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (221, 50, 'N', 283, 301);
+values (221, 50, 'Y', 283, 301);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (222, 50, 'N', 203, 320);
+values (222, 50, 'Y', 203, 320);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (223, 90, 'N', 219, 247);
+values (223, 90, 'Y', 219, 247);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (224, 90, 'N', 156, 237);
+values (224, 90, 'Y', 156, 237);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (225, 30, 'N', 131, 341);
+values (225, 30, 'Y', 131, 341);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (226, 30, 'N', 195, 394);
+values (226, 30, 'Y', 195, 394);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (227, 30, 'N', 492, 471);
+values (227, 30, 'Y', 492, 471);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (228, 30, 'N', 148, 220);
+values (228, 30, 'Y', 148, 220);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (229, 30, 'N', 415, 244);
+values (229, 30, 'Y', 415, 244);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (230, 30, 'N', 480, 444);
+values (230, 30, 'Y', 480, 444);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (231, 30, 'N', 473, 301);
+values (231, 30, 'Y', 473, 301);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (232, 50, 'N', 273, 208);
+values (232, 50, 'Y', 273, 208);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (233, 30, 'N', 447, 235);
+values (233, 30, 'Y', 447, 235);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (234, 90, 'N', 134, 415);
+values (234, 90, 'Y', 134, 415);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (235, 30, 'N', 394, 360);
+values (235, 30, 'Y', 394, 360);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (236, 50, 'N', 433, 491);
+values (236, 50, 'Y', 433, 491);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (237, 30, 'N', 246, 479);
+values (237, 30, 'Y', 246, 479);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (238, 50, 'N', 458, 184);
+values (238, 50, 'Y', 458, 184);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (239, 30, 'N', 330, 500);
+values (239, 30, 'Y', 330, 500);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (240, 90, 'N', 499, 380);
+values (240, 90, 'Y', 499, 380);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (241, 30, 'N', 414, 458);
+values (241, 30, 'Y', 414, 458);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (242, 30, 'N', 457, 141);
+values (242, 30, 'Y', 457, 141);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (243, 30, 'N', 479, 376);
+values (243, 30, 'Y', 479, 376);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (245, 30, 'N', 413, 344);
+values (245, 30, 'Y', 413, 344);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (246, 90, 'N', 310, 157);
+values (246, 90, 'Y', 310, 157);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (247, 30, 'N', 235, 423);
+values (247, 30, 'Y', 235, 423);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (248, 30, 'N', 491, 381);
+values (248, 30, 'Y', 491, 381);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (249, 50, 'N', 437, 377);
+values (249, 50, 'Y', 437, 377);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (251, 30, 'N', 460, 428);
+values (251, 30, 'Y', 460, 428);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (253, 30, 'N', 487, 236);
+values (253, 30, 'Y', 487, 236);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (254, 50, 'N', 240, 336);
+values (254, 50, 'Y', 240, 336);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (255, 90, 'N', 165, 106);
+values (255, 90, 'Y', 165, 106);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (256, 30, 'N', 135, 197);
+values (256, 30, 'Y', 135, 197);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (257, 30, 'N', 250, 418);
+values (257, 30, 'Y', 250, 418);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (258, 30, 'N', 237, 442);
+values (258, 30, 'Y', 237, 442);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (259, 90, 'N', 379, 479);
+values (259, 90, 'Y', 379, 479);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (260, 30, 'N', 158, 214);
+values (260, 30, 'Y', 158, 214);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (261, 30, 'N', 168, 409);
+values (261, 30, 'Y', 168, 409);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (262, 30, 'N', 483, 447);
+values (262, 30, 'Y', 483, 447);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (263, 30, 'N', 429, 442);
+values (263, 30, 'Y', 429, 442);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (265, 30, 'N', 119, 461);
+values (265, 30, 'Y', 119, 461);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (266, 30, 'N', 367, 273);
+values (266, 30, 'Y', 367, 273);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (267, 50, 'N', 210, 148);
+values (267, 50, 'Y', 210, 148);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (268, 30, 'N', 433, 240);
+values (268, 30, 'Y', 433, 240);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (269, 30, 'N', 487, 169);
+values (269, 30, 'Y', 487, 169);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (271, 30, 'N', 466, 377);
+values (271, 30, 'Y', 466, 377);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (272, 50, 'N', 288, 206);
+values (272, 50, 'Y', 288, 206);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (273, 90, 'N', 441, 243);
+values (273, 90, 'Y', 441, 243);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (274, 30, 'N', 223, 323);
+values (274, 30, 'Y', 223, 323);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (275, 30, 'N', 259, 312);
+values (275, 30, 'Y', 259, 312);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (276, 30, 'N', 240, 457);
+values (276, 30, 'Y', 240, 457);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (277, 30, 'N', 208, 284);
+values (277, 30, 'Y', 208, 284);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (278, 30, 'N', 210, 164);
+values (278, 30, 'Y', 210, 164);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (279, 30, 'N', 447, 116);
+values (279, 30, 'Y', 447, 116);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (280, 50, 'N', 127, 151);
+values (280, 50, 'Y', 127, 151);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (281, 30, 'N', 147, 158);
+values (281, 30, 'Y', 147, 158);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (282, 30, 'N', 418, 211);
+values (282, 30, 'Y', 418, 211);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (283, 30, 'N', 361, 304);
+values (283, 30, 'Y', 361, 304);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (284, 30, 'N', 377, 196);
+values (284, 30, 'Y', 377, 196);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (285, 30, 'N', 225, 174);
+values (285, 30, 'Y', 225, 174);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (286, 90, 'N', 322, 409);
+values (286, 90, 'Y', 322, 409);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (287, 30, 'N', 475, 320);
+values (287, 30, 'Y', 475, 320);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (288, 30, 'N', 281, 220);
+values (288, 30, 'Y', 281, 220);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (289, 50, 'N', 294, 456);
+values (289, 50, 'Y', 294, 456);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (290, 90, 'N', 398, 112);
+values (290, 90, 'Y', 398, 112);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (291, 30, 'N', 285, 311);
+values (291, 30, 'Y', 285, 311);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (292, 30, 'N', 270, 349);
+values (292, 30, 'Y', 270, 349);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (293, 30, 'N', 363, 317);
+values (293, 30, 'Y', 363, 317);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (294, 90, 'N', 402, 263);
+values (294, 90, 'Y', 402, 263);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (295, 30, 'N', 182, 104);
+values (295, 30, 'Y', 182, 104);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (296, 50, 'N', 192, 180);
+values (296, 50, 'Y', 192, 180);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (297, 30, 'N', 475, 441);
+values (297, 30, 'Y', 475, 441);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (298, 90, 'N', 439, 360);
+values (298, 90, 'Y', 439, 360);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (299, 30, 'N', 129, 179);
+values (299, 30, 'Y', 129, 179);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (300, 30, 'N', 380, 160);
+values (300, 30, 'Y', 380, 160);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (301, 30, 'N', 180, 247);
+values (301, 30, 'Y', 180, 247);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (302, 30, 'N', 443, 237);
+values (302, 30, 'Y', 443, 237);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (303, 90, 'N', 334, 243);
+values (303, 90, 'Y', 334, 243);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (304, 30, 'N', 336, 155);
+values (304, 30, 'Y', 336, 155);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (305, 30, 'N', 412, 476);
+values (305, 30, 'Y', 412, 476);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (306, 30, 'N', 449, 239);
+values (306, 30, 'Y', 449, 239);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (307, 90, 'N', 324, 209);
+values (307, 90, 'Y', 324, 209);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (308, 50, 'N', 197, 432);
+values (308, 50, 'Y', 197, 432);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (309, 30, 'N', 163, 154);
+values (309, 30, 'Y', 163, 154);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (310, 30, 'N', 469, 195);
+values (310, 30, 'Y', 469, 195);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (311, 30, 'N', 425, 366);
+values (311, 30, 'Y', 425, 366);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (312, 50, 'N', 218, 226);
+values (312, 50, 'Y', 218, 226);
 commit;
 prompt 200 records committed...
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (313, 30, 'N', 358, 379);
+values (313, 30, 'Y', 358, 379);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (314, 50, 'N', 367, 396);
+values (314, 50, 'Y', 367, 396);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (315, 30, 'N', 431, 358);
+values (315, 30, 'Y', 431, 358);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (316, 50, 'N', 242, 322);
+values (316, 50, 'Y', 242, 322);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (317, 90, 'N', 131, 485);
+values (317, 90, 'Y', 131, 485);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (318, 50, 'N', 133, 162);
+values (318, 50, 'Y', 133, 162);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (319, 90, 'N', 284, 157);
+values (319, 90, 'Y', 284, 157);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (320, 50, 'N', 376, 428);
+values (320, 50, 'Y', 376, 428);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (321, 50, 'N', 299, 225);
+values (321, 50, 'Y', 299, 225);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (322, 30, 'N', 162, 430);
+values (322, 30, 'Y', 162, 430);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (323, 90, 'N', 343, 240);
+values (323, 90, 'Y', 343, 240);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (324, 30, 'N', 468, 145);
+values (324, 30, 'Y', 468, 145);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (325, 50, 'N', 436, 342);
+values (325, 50, 'Y', 436, 342);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (326, 30, 'N', 322, 315);
+values (326, 30, 'Y', 322, 315);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (327, 30, 'N', 468, 160);
+values (327, 30, 'Y', 468, 160);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (328, 30, 'N', 379, 353);
+values (328, 30, 'Y', 379, 353);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (329, 50, 'N', 350, 345);
+values (329, 50, 'Y', 350, 345);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (330, 30, 'N', 236, 497);
+values (330, 30, 'Y', 236, 497);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (331, 30, 'N', 285, 325);
+values (331, 30, 'Y', 285, 325);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (332, 50, 'N', 260, 172);
+values (332, 50, 'Y', 260, 172);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (333, 90, 'N', 358, 284);
+values (333, 90, 'Y', 358, 284);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (334, 50, 'N', 352, 188);
+values (334, 50, 'Y', 352, 188);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (335, 30, 'N', 267, 171);
+values (335, 30, 'Y', 267, 171);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (336, 50, 'N', 426, 351);
+values (336, 50, 'Y', 426, 351);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (337, 50, 'N', 360, 126);
+values (337, 50, 'Y', 360, 126);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (338, 30, 'N', 221, 111);
+values (338, 30, 'Y', 221, 111);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (339, 50, 'N', 410, 339);
+values (339, 50, 'Y', 410, 339);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (340, 30, 'N', 432, 230);
+values (340, 30, 'Y', 432, 230);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (341, 30, 'N', 112, 327);
+values (341, 30, 'Y', 112, 327);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (342, 30, 'N', 371, 273);
+values (342, 30, 'Y', 371, 273);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (343, 90, 'N', 102, 446);
+values (343, 90, 'Y', 102, 446);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (344, 30, 'N', 148, 326);
+values (344, 30, 'Y', 148, 326);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (345, 30, 'N', 306, 411);
+values (345, 30, 'Y', 306, 411);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (346, 30, 'N', 182, 141);
+values (346, 30, 'Y', 182, 141);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (347, 30, 'N', 406, 464);
+values (347, 30, 'Y', 406, 464);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (348, 30, 'N', 432, 101);
+values (348, 30, 'Y', 432, 101);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (349, 30, 'N', 441, 342);
+values (349, 30, 'Y', 441, 342);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (350, 30, 'N', 159, 417);
+values (350, 30, 'Y', 159, 417);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (351, 30, 'N', 326, 493);
+values (351, 30, 'Y', 326, 493);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (352, 50, 'N', 207, 140);
+values (352, 50, 'Y', 207, 140);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (353, 30, 'N', 298, 300);
+values (353, 30, 'Y', 298, 300);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (354, 30, 'N', 212, 413);
+values (354, 30, 'Y', 212, 413);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (355, 30, 'N', 290, 137);
+values (355, 30, 'Y', 290, 137);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (356, 30, 'N', 337, 326);
+values (356, 30, 'Y', 337, 326);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (357, 30, 'N', 220, 456);
+values (357, 30, 'Y', 220, 456);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (358, 90, 'N', 327, 223);
+values (358, 90, 'Y', 327, 223);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (359, 90, 'N', 420, 281);
+values (359, 90, 'Y', 420, 281);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (360, 90, 'N', 298, 412);
+values (360, 90, 'Y', 298, 412);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (361, 30, 'N', 179, 348);
+values (361, 30, 'Y', 179, 348);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (362, 50, 'N', 440, 106);
+values (362, 50, 'Y', 440, 106);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (363, 30, 'N', 411, 458);
+values (363, 30, 'Y', 411, 458);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (364, 30, 'N', 456, 199);
+values (364, 30, 'Y', 456, 199);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (365, 30, 'N', 457, 253);
+values (365, 30, 'Y', 457, 253);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (366, 30, 'N', 316, 252);
+values (366, 30, 'Y', 316, 252);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (367, 90, 'N', 201, 232);
+values (367, 90, 'Y', 201, 232);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (368, 50, 'N', 344, 113);
+values (368, 50, 'Y', 344, 113);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (369, 50, 'N', 319, 167);
+values (369, 50, 'Y', 319, 167);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (370, 30, 'N', 222, 161);
+values (370, 30, 'Y', 222, 161);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (371, 50, 'N', 250, 172);
+values (371, 50, 'Y', 250, 172);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (372, 30, 'N', 130, 173);
+values (372, 30, 'Y', 130, 173);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (373, 30, 'N', 290, 375);
+values (373, 30, 'Y', 290, 375);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (374, 50, 'N', 400, 419);
+values (374, 50, 'Y', 400, 419);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (375, 30, 'N', 214, 426);
+values (375, 30, 'Y', 214, 426);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (376, 30, 'N', 101, 174);
+values (376, 30, 'Y', 101, 174);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (377, 30, 'N', 424, 427);
+values (377, 30, 'Y', 424, 427);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (378, 30, 'N', 147, 471);
+values (378, 30, 'Y', 147, 471);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (379, 30, 'N', 418, 491);
+values (379, 30, 'Y', 418, 491);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (380, 30, 'N', 131, 256);
+values (380, 30, 'Y', 131, 256);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (381, 90, 'N', 187, 116);
+values (381, 90, 'Y', 187, 116);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (382, 50, 'N', 484, 396);
+values (382, 50, 'Y', 484, 396);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (383, 30, 'N', 135, 196);
+values (383, 30, 'Y', 135, 196);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (384, 30, 'N', 358, 282);
+values (384, 30, 'Y', 358, 282);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (385, 30, 'N', 327, 451);
+values (385, 30, 'Y', 327, 451);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (386, 90, 'N', 435, 285);
+values (386, 90, 'Y', 435, 285);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (387, 30, 'N', 258, 276);
+values (387, 30, 'Y', 258, 276);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (388, 90, 'N', 260, 413);
+values (388, 90, 'Y', 260, 413);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (389, 30, 'N', 350, 230);
+values (389, 30, 'Y', 350, 230);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (390, 30, 'N', 102, 412);
+values (390, 30, 'Y', 102, 412);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (391, 30, 'N', 374, 138);
+values (391, 30, 'Y', 374, 138);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (392, 30, 'N', 132, 480);
+values (392, 30, 'Y', 132, 480);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (393, 30, 'N', 395, 219);
+values (393, 30, 'Y', 395, 219);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (394, 30, 'N', 137, 210);
+values (394, 30, 'Y', 137, 210);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (395, 90, 'N', 243, 448);
+values (395, 90, 'Y', 243, 448);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (396, 30, 'N', 153, 162);
+values (396, 30, 'Y', 153, 162);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (397, 30, 'N', 310, 125);
+values (397, 30, 'Y', 310, 125);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (398, 30, 'N', 421, 451);
+values (398, 30, 'Y', 421, 451);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (399, 30, 'N', 470, 497);
+values (399, 30, 'Y', 470, 497);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (400, 90, 'N', 273, 364);
+values (400, 90, 'Y', 273, 364);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (401, 30, 'N', 325, 371);
+values (401, 30, 'Y', 325, 371);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (402, 30, 'N', 337, 211);
+values (402, 30, 'Y', 337, 211);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (403, 50, 'N', 379, 382);
+values (403, 50, 'Y', 379, 382);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (404, 50, 'N', 475, 183);
+values (404, 50, 'Y', 475, 183);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (405, 90, 'N', 130, 268);
+values (405, 90, 'Y', 130, 268);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (406, 30, 'N', 241, 254);
+values (406, 30, 'Y', 241, 254);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (407, 30, 'N', 293, 378);
+values (407, 30, 'Y', 293, 378);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (408, 30, 'N', 262, 292);
+values (408, 30, 'Y', 262, 292);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (409, 30, 'N', 347, 198);
+values (409, 30, 'Y', 347, 198);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (410, 30, 'N', 147, 405);
+values (410, 30, 'Y', 147, 405);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (411, 30, 'N', 203, 312);
+values (411, 30, 'Y', 203, 312);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (412, 50, 'N', 123, 308);
+values (412, 50, 'Y', 123, 308);
 commit;
 prompt 300 records committed...
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (413, 30, 'N', 405, 179);
+values (413, 30, 'Y', 405, 179);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (414, 30, 'N', 391, 119);
+values (414, 30, 'Y', 391, 119);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (415, 30, 'N', 447, 141);
+values (415, 30, 'Y', 447, 141);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (416, 30, 'N', 212, 174);
+values (416, 30, 'Y', 212, 174);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (417, 30, 'N', 419, 450);
+values (417, 30, 'Y', 419, 450);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (418, 30, 'N', 313, 267);
+values (418, 30, 'Y', 313, 267);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (419, 30, 'N', 382, 125);
+values (419, 30, 'Y', 382, 125);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (420, 50, 'N', 223, 327);
+values (420, 50, 'Y', 223, 327);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (421, 30, 'N', 260, 437);
+values (421, 30, 'Y', 260, 437);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (422, 50, 'N', 130, 100);
+values (422, 50, 'Y', 130, 100);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (423, 50, 'N', 263, 204);
+values (423, 50, 'Y', 263, 204);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (424, 30, 'N', 465, 277);
+values (424, 30, 'Y', 465, 277);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (425, 90, 'N', 233, 132);
+values (425, 90, 'Y', 233, 132);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (426, 50, 'N', 411, 230);
+values (426, 50, 'Y', 411, 230);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (427, 30, 'N', 315, 168);
+values (427, 30, 'Y', 315, 168);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (428, 90, 'N', 136, 384);
+values (428, 90, 'Y', 136, 384);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (429, 30, 'N', 152, 273);
+values (429, 30, 'Y', 152, 273);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (430, 30, 'N', 352, 406);
+values (430, 30, 'Y', 352, 406);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (431, 30, 'N', 207, 239);
+values (431, 30, 'Y', 207, 239);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (432, 30, 'N', 398, 427);
+values (432, 30, 'Y', 398, 427);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (433, 90, 'N', 412, 108);
+values (433, 90, 'Y', 412, 108);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (434, 30, 'N', 449, 483);
+values (434, 30, 'Y', 449, 483);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (435, 30, 'N', 132, 441);
+values (435, 30, 'Y', 132, 441);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (436, 90, 'N', 252, 182);
+values (436, 90, 'Y', 252, 182);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (437, 50, 'N', 268, 381);
+values (437, 50, 'Y', 268, 381);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (438, 90, 'N', 379, 202);
+values (438, 90, 'Y', 379, 202);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (439, 30, 'N', 275, 375);
+values (439, 30, 'Y', 275, 375);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (440, 30, 'N', 415, 401);
+values (440, 30, 'Y', 415, 401);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (441, 30, 'N', 109, 296);
+values (441, 30, 'Y', 109, 296);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (442, 50, 'N', 466, 166);
+values (442, 50, 'Y', 466, 166);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (443, 30, 'N', 295, 199);
+values (443, 30, 'Y', 295, 199);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (444, 30, 'N', 392, 179);
+values (444, 30, 'Y', 392, 179);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (445, 30, 'N', 129, 104);
+values (445, 30, 'Y', 129, 104);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (446, 50, 'N', 365, 411);
+values (446, 50, 'Y', 365, 411);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (447, 90, 'N', 394, 399);
+values (447, 90, 'Y', 394, 399);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (448, 30, 'N', 354, 337);
+values (448, 30, 'Y', 354, 337);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (449, 30, 'N', 209, 470);
+values (449, 30, 'Y', 209, 470);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (450, 30, 'N', 131, 182);
+values (450, 30, 'Y', 131, 182);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (451, 30, 'N', 397, 360);
+values (451, 30, 'Y', 397, 360);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (452, 30, 'N', 209, 391);
+values (452, 30, 'Y', 209, 391);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (453, 30, 'N', 185, 247);
+values (453, 30, 'Y', 185, 247);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (454, 30, 'N', 497, 111);
+values (454, 30, 'Y', 497, 111);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (455, 90, 'N', 422, 150);
+values (455, 90, 'Y', 422, 150);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (456, 30, 'N', 283, 328);
+values (456, 30, 'Y', 283, 328);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (457, 30, 'N', 128, 259);
+values (457, 30, 'Y', 128, 259);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (458, 50, 'N', 347, 389);
+values (458, 50, 'Y', 347, 389);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (459, 30, 'N', 361, 290);
+values (459, 30, 'Y', 361, 290);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (460, 30, 'N', 388, 385);
+values (460, 30, 'Y', 388, 385);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (461, 30, 'N', 217, 268);
+values (461, 30, 'Y', 217, 268);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (462, 30, 'N', 191, 138);
+values (462, 30, 'Y', 191, 138);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (463, 30, 'N', 149, 329);
+values (463, 30, 'Y', 149, 329);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (464, 30, 'N', 103, 422);
+values (464, 30, 'Y', 103, 422);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (465, 90, 'N', 213, 353);
+values (465, 90, 'Y', 213, 353);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (466, 30, 'N', 444, 397);
+values (466, 30, 'Y', 444, 397);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (467, 30, 'N', 442, 218);
+values (467, 30, 'Y', 442, 218);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (468, 30, 'N', 244, 492);
+values (468, 30, 'Y', 244, 492);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (469, 50, 'N', 138, 283);
+values (469, 50, 'Y', 138, 283);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (470, 90, 'N', 496, 283);
+values (470, 90, 'Y', 496, 283);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (471, 50, 'N', 495, 489);
+values (471, 50, 'Y', 495, 489);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (472, 30, 'N', 344, 223);
+values (472, 30, 'Y', 344, 223);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (473, 90, 'N', 144, 494);
+values (473, 90, 'Y', 144, 494);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (474, 50, 'N', 189, 377);
+values (474, 50, 'Y', 189, 377);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (475, 30, 'N', 428, 425);
+values (475, 30, 'Y', 428, 425);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (476, 30, 'N', 123, 191);
+values (476, 30, 'Y', 123, 191);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (477, 30, 'N', 393, 262);
+values (477, 30, 'Y', 393, 262);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (478, 30, 'N', 491, 492);
+values (478, 30, 'Y', 491, 492);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (479, 90, 'N', 312, 240);
+values (479, 90, 'Y', 312, 240);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (480, 30, 'N', 168, 495);
+values (480, 30, 'Y', 168, 495);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (481, 30, 'N', 130, 281);
+values (481, 30, 'Y', 130, 281);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (482, 90, 'N', 174, 253);
+values (482, 90, 'Y', 174, 253);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (483, 30, 'N', 436, 450);
+values (483, 30, 'Y', 436, 450);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (484, 30, 'N', 204, 125);
+values (484, 30, 'Y', 204, 125);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (485, 30, 'N', 358, 434);
+values (485, 30, 'Y', 358, 434);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (486, 30, 'N', 487, 469);
+values (486, 30, 'Y', 487, 469);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (487, 30, 'N', 385, 450);
+values (487, 30, 'Y', 385, 450);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (488, 50, 'N', 170, 352);
+values (488, 50, 'Y', 170, 352);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (489, 90, 'N', 113, 371);
+values (489, 90, 'Y', 113, 371);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (490, 90, 'N', 228, 106);
+values (490, 90, 'Y', 228, 106);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (491, 30, 'N', 115, 287);
+values (491, 30, 'Y', 115, 287);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (492, 30, 'N', 495, 489);
+values (492, 30, 'Y', 495, 489);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (493, 30, 'N', 339, 482);
+values (493, 30, 'Y', 339, 482);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (494, 30, 'N', 425, 473);
+values (494, 30, 'Y', 425, 473);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (495, 30, 'N', 228, 440);
+values (495, 30, 'Y', 228, 440);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (496, 30, 'N', 373, 471);
+values (496, 30, 'Y', 373, 471);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (497, 30, 'N', 164, 475);
+values (497, 30, 'Y', 164, 475);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (498, 50, 'N', 206, 177);
+values (498, 50, 'Y', 206, 177);
 insert into TICKETSALES (ticketid, price, issold, scheduleid, subscriberid)
-values (499, 30, 'N', 245, 388);
+values (499, 30, 'Y', 245, 388);
 commit;
 prompt 387 records loaded
 prompt Enabling foreign key constraints for SCHEDULES...
-alter table SCHEDULES enable constraint SYS_C007988;
-alter table SCHEDULES enable constraint SYS_C007989;
-alter table SCHEDULES enable constraint SYS_C007990;
+alter table SCHEDULES enable constraint SYS_C008101;
+alter table SCHEDULES enable constraint SYS_C008102;
+alter table SCHEDULES enable constraint SYS_C008103;
 prompt Enabling foreign key constraints for TICKETSALES...
-alter table TICKETSALES enable constraint SYS_C007996;
-alter table TICKETSALES enable constraint SYS_C007997;
+alter table TICKETSALES enable constraint SYS_C008112;
+alter table TICKETSALES enable constraint SYS_C008113;
 prompt Enabling triggers for DATES...
 alter table DATES enable all triggers;
 prompt Enabling triggers for MOVIES...
