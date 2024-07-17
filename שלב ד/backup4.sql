@@ -1,5 +1,5 @@
 ﻿prompt PL/SQL Developer import file
-prompt Created on יום ראשון 14 יולי 2024 by naama
+prompt Created on יום רביעי 17 יולי 2024 by naama
 set feedback off
 set define off
 prompt Creating CATEGORYS...
